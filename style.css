@@ -331,4 +331,58 @@ body{
 .btn.small{
   border-radius: 999px;
 }
+/* === PALETA AMARELO KODAK === */
+:root{
+  --accent: #FFD400;
+  --accentDark: #E6BF00;
+}
+
+/* Botões principais em amarelo Kodak */
+.btn.primary{
+  background: linear-gradient(135deg, var(--accent), var(--accentDark));
+  border-color: rgba(230,191,0,.45);
+  color: #111827;
+}
+
+/* Botões de categoria */
+.cat-grid{
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+@media(max-width:900px){
+  .cat-grid{ grid-template-columns: 1fr; }
+}
+
+.cat-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 14px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-weight: 800;
+  color: #111827;
+  box-shadow: 0 6px 16px rgba(17,24,39,.08);
+}
+.cat-btn:hover{
+  background: var(--accent);
+}
+
+/* Subtítulo do produto */
+.submeta{
+  font-size: 13px;
+  color: var(--muted2);
+  margin-top: -6px;
+  margin-bottom: 8px;
+}
+
+/* Destaque leve no hero */
+.hero{
+  background:
+    radial-gradient(900px 380px at 50% 0%, rgba(255,212,0,.22), transparent 62%),
+    linear-gradient(180deg, var(--soft), #fff);
+}
 
