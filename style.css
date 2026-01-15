@@ -350,3 +350,62 @@ footer a{color:#fff}
   h1{ font-size: 30px; }
   .lead{ font-size: 15px; }
 }
+/* Respiro geral entre blocos */
+.section{
+  padding: 46px 0 56px;
+}
+
+/* Respiro no hero */
+.hero{
+  padding: 52px 0 40px;
+}
+
+.lead{
+  margin-bottom: 26px; /* antes era ~18px */
+}
+
+/* Botões mais “respirados” */
+.ctas{
+  margin-top: 22px;
+  gap: 16px;
+}
+
+/* Respiro entre título e texto das seções */
+.section-title h2{
+  margin-bottom: 14px;
+}
+
+.section-title p{
+  margin-top: 10px;
+}
+
+/* Cards mais arejados */
+.item h3{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.meta{
+  margin-bottom: 14px;
+}
+
+.submeta{
+  margin-bottom: 14px;
+}
+
+.actions{
+  margin-top: 18px;
+  gap: 14px;
+}
+
+/* Pills com mais espaço */
+.pills{
+  margin-top: 24px;
+  gap: 14px;
+}
+
+/* Bloco "Sobre" mais confortável */
+.band{
+  padding: 32px;
+}
+
