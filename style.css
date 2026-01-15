@@ -392,3 +392,6 @@ body{
   margin-right: auto;
 }
 
+.topbar span:first-child{
+  font-weight: 600; /* não é bold */
+}
