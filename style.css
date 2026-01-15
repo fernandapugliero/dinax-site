@@ -385,4 +385,10 @@ body{
     radial-gradient(900px 380px at 50% 0%, rgba(255,212,0,.22), transparent 62%),
     linear-gradient(180deg, var(--soft), #fff);
 }
+/* Centralização garantida para textos longos */
+.seo-text, .about-text{
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
 
