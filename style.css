@@ -419,4 +419,13 @@ body{
   background: rgba(255,212,0,.28);
   border-color: rgba(230,191,0,.45);
 }
+/* Forçar Amarelo Kodak em TODO botão primary */
+.btn.primary{
+  background: #FFD400 !important;
+  border-color: rgba(230,191,0,.55) !important;
+  color: #111827 !important;
+}
+.btn.primary:hover{
+  background: #E6BF00 !important;
+}
 
