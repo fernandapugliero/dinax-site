@@ -375,4 +375,16 @@ footer a{color:#fff}
   height: auto;
   display:inline-block;
 }
+.faq-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px){
+  .faq-grid{
+    grid-template-columns: 1fr;
+  }
+}
 
