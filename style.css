@@ -139,7 +139,13 @@ header{
   font-size: 14px;
   box-shadow:none;
 }
-
+/* Logo no topo das páginas */
+.logo-hero{
+  display: block;
+  margin: 8px auto 14px;   /* bem mais compacto */
+  width: min(300px, 88%);
+  height: auto;
+}
 /* Hero */
 .hero{
   padding: 54px 0 44px; /* mais respiro, mas sem exagero */
