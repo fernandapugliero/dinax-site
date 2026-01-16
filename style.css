@@ -351,3 +351,22 @@ footer a{color:#fff}
   .lead{ font-size: 15px; }
   .section{ padding: 46px 0 56px; }
 }
+/* Header com logo central, sem ficar "seguindo" no scroll */
+.site-header{
+  position: static;
+  background: transparent;
+  border-bottom: none;
+}
+
+.logoWrap{
+  display:block;
+  text-align:center;
+  padding: 10px 0 4px; /* faixa branca menor */
+}
+
+.logoTop{
+  width: min(340px, 92%);
+  height: auto;
+  display:inline-block;
+}
+
