@@ -7,16 +7,20 @@
   <title>Dinax | Lanternas, baterias e acessórios</title>
   <meta name="description" content="Lanternas, holofotes, iluminação LED, baterias e acessórios com envio para todo o Brasil. Atendimento via WhatsApp. Pagamento por PIX.">
 
+  <!-- Fonte (Inter) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
   <link rel="icon" href="assets/favicon-dinax.png" type="image/png">
 </head>
 
 <body>
-  <!-- Banner superior -->
+  <!-- Topbar -->
   <div class="topbar">
     <div class="container">
       <div class="inner">
@@ -29,54 +33,57 @@
     </div>
   </div>
 
-  <!-- Header (não sticky) com logo centralizado -->
-  <header class="site-header">
-    <div class="container">
-      <a class="logoWrap" href="./" aria-label="Dinax">
-        <img src="assets/dinax-logo.png" alt="Dinax" class="logoTop">
-      </a>
-    </div>
-  </header>
-
   <main>
-    <!-- HERO (mantém o degradê) -->
+    <!-- HERO -->
     <section class="hero">
       <div class="container">
         <div class="hero-grid">
           <div class="center">
+
+            <!-- LOGO (corporativo, sem quebrar layout) -->
+            <img
+              src="assets/dinax-logo.png"
+              alt="Dinax"
+              style="display:block;margin:6px auto 20px;width:min(320px,92%);height:auto;"
+            >
+
             <h1>Lanternas, baterias e acessórios com envio para todo o Brasil</h1>
 
-            <p class="lead maxch">
+            <p class="lead maxch" style="margin-top:10px;">
               A Dinax atua há mais de 20 anos no mercado brasileiro com foco em qualidade e atendimento direto.
               Baseada no Rio Grande do Sul, com envio para clientes em todo Brasil e atendimento especializado via WhatsApp.
             </p>
 
-            <div class="ctas">
+            <div class="ctas" style="margin-top:18px;">
               <a class="btn primary"
                  href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Quero%20solicitar%20o%20cat%C3%A1logo%20da%20Dinax%20e%20um%20or%C3%A7amento."
                  target="_blank" rel="noopener">
                 Solicitar catálogo no WhatsApp
               </a>
             </div>
+
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SEO + Pills no lugar certo -->
+    <!-- SEO + Pills + Destaques -->
     <section class="section">
       <div class="container">
-        <div class="section-title center">
+        <div class="section-title center" style="margin-bottom:30px;">
           <h2>Produtos para caça, camping, segurança, trabalho e lazer</h2>
 
-          <!-- TEXTO SEO: centralização garantida -->
-          <p class="maxch seo-text">
-            Se você chegou aqui pelo Google pesquisando por <em>lanterna tática</em>, <em>lanterna holofote recarregável</em>,
-            <em>lanterna de cabeça</em>, <em>iluminação LED</em> ou <em>baterias recarregáveis</em>, você está no lugar certo.
-            Nosso catálogo atende desde uso doméstico e emergências até aplicações profissionais.
-          </p>
+          <!-- Wrapper para garantir centralização no desktop -->
+          <div style="text-align:center;">
+            <p class="maxch seo-text" style="text-align:center;margin:18px auto 26px;line-height:1.75;">
+              Se você chegou aqui pelo Google pesquisando por <em>lanterna tática</em>, <em>lanterna holofote recarregável</em>,
+              <em>lanterna de cabeça</em>, <em>iluminação LED</em> ou <em>baterias recarregáveis</em>, você está no lugar certo.
+              Nosso catálogo atende desde uso doméstico e emergências até aplicações profissionais.
+            </p>
+          </div>
 
-          <div class="pills" aria-label="Atalhos">
+          <!-- Pills no lugar certo -->
+          <div class="pills" aria-label="Atalhos" style="margin-top:22px;">
             <a class="pillbtn" href="#">Lanternas táticas</a>
             <a class="pillbtn" href="#">Lanternas holofote</a>
             <a class="pillbtn" href="#">Lanternas de cabeça</a>
@@ -85,11 +92,12 @@
           </div>
         </div>
 
-        <div class="section-title center" style="margin-top:34px;">
+        <div class="section-title center" style="margin-top:34px;margin-bottom:16px;">
           <h2>Produtos em destaque</h2>
         </div>
 
         <div class="grid" style="margin-top:18px;">
+          <!-- Produto 1 -->
           <article class="card">
             <img class="thumb" src="produtos/lanterna-holofote-super-led.png" alt="Lanterna Holofote Super LED 7045b">
             <div class="item center">
@@ -108,6 +116,7 @@
             </div>
           </article>
 
+          <!-- Produto 2 -->
           <article class="card">
             <img class="thumb" src="produtos/lanterna-holofote-super-led.png" alt="Lanterna Holofote Super LED 7045b">
             <div class="item center">
@@ -126,6 +135,7 @@
             </div>
           </article>
 
+          <!-- Produto 3 -->
           <article class="card">
             <img class="thumb" src="produtos/lanterna-holofote-super-led.png" alt="Lanterna Holofote Super LED 7045b">
             <div class="item center">
@@ -153,7 +163,7 @@
         <div class="band center">
           <h2 style="margin:0 0 14px;">Sobre a Dinax</h2>
 
-          <p class="maxch about-text">
+          <p class="maxch about-text" style="margin-top:10px;line-height:1.75;">
             A Dinax é uma empresa com mais de duas décadas de experiência no mercado, trabalhando com lanternas, holofotes,
             iluminação LED e acessórios. Nosso objetivo é facilitar a compra com atendimento direto e orientação na escolha do produto ideal,
             com envio para todo o Brasil.
@@ -171,6 +181,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="center" style="opacity:.95;">
@@ -184,10 +195,9 @@
      href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20quero%20um%20or%C3%A7amento."
      target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
     <span class="bubble" aria-hidden="true">
-      <!-- ícone mais próximo do WhatsApp -->
-      <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path fill="#25D366" d="M19.1 17.9c-.3-.2-1.6-.8-1.9-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-1 .1-.2-.3-.8-.5-1.5-1.2-.6-.6-1-1.3-1.2-1.6-.2-.3 0-.4.1-.6.1-.1.2-.3.3-.4.1-.1.1-.3.2-.4.1-.2 0-.4 0-.5 0-.2-.7-1.8-.9-2.5-.2-.7-.5-.6-.7-.6h-.6c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.4 0 1.4 1 2.8 1.1 3 .1.2 2 3.1 4.9 4.4 2.9 1.3 2.9.9 3.4.8.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.1-1.3-.1-.2-.3-.2-.6-.4z"/>
-        <path fill="#111827" d="M16 3C9.4 3 4 8.4 4 15c0 2.2.6 4.3 1.8 6.2L4 29l8-1.7C13.3 27.7 14.7 28 16 28c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22.1c-1.2 0-2.4-.3-3.5-.8l-.6-.3-4.7 1 1-4.6-.4-.7c-.9-1.4-1.4-3-1.4-4.7C6.4 9.7 10.7 5.4 16 5.4S25.6 9.7 25.6 15 21.3 25.1 16 25.1z"/>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#25D366" d="M12 2a9.8 9.8 0 0 0-8.4 14.9L2 22l5.2-1.5A9.8 9.8 0 1 0 12 2z"/>
+        <path fill="#fff" d="M9.2 7.6c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .6.4.2.4.7 1.7.8 1.9.1.2.1.4 0 .6-.1.2-.2.3-.3.4l-.3.3c-.1.1-.3.3-.1.6.2.3.7 1.2 1.5 1.9.8.7 1.5.9 1.8 1 .2.1.4 0 .5-.2l.7-.8c.2-.2.3-.2.5-.1.2.1 1.5.7 1.8.9.3.1.4.2.5.3.1.2.1.9-.3 1.5-.3.5-1.2 1-1.8 1-.6 0-1.1-.2-2.6-.8-1.5-.7-2.5-1.7-3.4-2.9-.9-1.2-1.4-2.4-1.4-3.2 0-.8.3-1.5.6-2z"/>
       </svg>
     </span>
     <span>WhatsApp</span>
