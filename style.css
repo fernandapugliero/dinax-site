@@ -148,7 +148,7 @@ header{
 }
 /* Hero */
 .hero{
-  padding: 54px 0 44px; /* mais respiro, mas sem exagero */
+  padding: 28px 0 48px; /* mais respiro, mas sem exagero */
   background:
     radial-gradient(900px 380px at 50% 0%, rgba(255,212,0,.22), transparent 62%),
     linear-gradient(180deg, var(--soft), #fff);
