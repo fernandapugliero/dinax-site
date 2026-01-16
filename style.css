@@ -208,10 +208,16 @@ h1{
 }
 
 /* Sections */
-.section{padding: 34px 0 44px;}
+.section{padding: 54px 0 64px;}
 .section-title{
   margin: 0 0 14px;
   text-align:center;
+}
+.section-title .seo-text{
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 28px;
+  line-height: 1.7;
 }
 .section-title h2{
   margin:0 0 6px;
@@ -352,12 +358,12 @@ footer a{color:#fff}
 }
 /* Respiro geral entre blocos */
 .section{
-  padding: 46px 0 56px;
+  padding: 54px 0 64px;
 }
 
 /* Respiro no hero */
 .hero{
-  padding: 52px 0 40px;
+  padding: 54px 0 64px;
 }
 
 .lead{
