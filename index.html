@@ -4,17 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dinax | Lanternas, Iluminação LED e Acessórios</title>
-  <meta name="description" content="Lanternas, holofotes, lanternas LED, baterias e acessórios com envio para todo o Brasil. Atendimento especializado via WhatsApp. Pagamento por PIX.">
+  <title>Dinax | Lanternas, baterias e acessórios</title>
+  <meta name="description" content="Lanternas, holofotes, iluminação LED, baterias e acessórios com envio para todo o Brasil. Atendimento via WhatsApp. Pagamento por PIX.">
 
   <!-- Fonte (Inter) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- CSS e favicon (relativos para funcionar em /dinax-site/) -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Favicon (PNG) -->
+  <link rel="icon" href="assets/favicon-dinax.png" type="image/png">
 </head>
 
 <body>
@@ -31,33 +33,13 @@
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- Header com logo centralizado -->
   <header>
     <div class="container">
-      <div class="nav">
-        <a class="brand" href="./" aria-label="Dinax">
-          <div class="logoBox" aria-hidden="true" title="Dinax">
-            <!-- ícone simples (feixe) -->
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M8 8h6a2 2 0 0 1 2 2v4H8V8Z" stroke="#111827" stroke-width="1.8" />
-              <path d="M6.6 9.6h1.4V14H6.6a1 1 0 0 1-1-1v-2.4a1 1 0 0 1 1-1Z" fill="#111827"/>
-              <path d="M16 10.2c2.2.6 3.6 1.4 4.6 2.3-1 .9-2.4 1.7-4.6 2.3" stroke="#111827" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div>
-            <div class="name">Dinax</div>
-            <div class="tag">Lanternas • Iluminação LED • Acessórios</div>
-          </div>
+      <div class="nav nav-center">
+        <a class="brand brand-center" href="./" aria-label="Dinax">
+          <img class="logoTop" src="assets/dinax-logo.png" alt="Dinax">
         </a>
-
-        <!-- Menu simplificado: apenas WhatsApp -->
-        <nav class="navlinks" aria-label="Contato">
-          <a class="btn small primary"
-             href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Quero%20solicitar%20o%20cat%C3%A1logo%20da%20Dinax%20e%20um%20or%C3%A7amento."
-             target="_blank" rel="noopener">
-            WhatsApp
-          </a>
-        </nav>
       </div>
     </div>
   </header>
@@ -68,6 +50,7 @@
       <div class="container">
         <div class="hero-grid">
           <div class="center">
+
             <h1>Lanternas, baterias e acessórios com envio para todo o Brasil</h1>
 
             <p class="lead maxch">
@@ -75,47 +58,57 @@
               Baseada no Rio Grande do Sul, com envio para clientes em todo Brasil e atendimento especializado via WhatsApp.
             </p>
 
-            <div class="ctas">
+            <div class="ctas ctas-spaced">
               <a class="btn primary"
                  href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Quero%20solicitar%20o%20cat%C3%A1logo%20da%20Dinax%20e%20um%20or%C3%A7amento."
                  target="_blank" rel="noopener">
                 Solicitar catálogo no WhatsApp
               </a>
+
+              <a class="btn"
+                 href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20e%20orienta%C3%A7%C3%A3o%20para%20escolher%20o%20produto%20ideal."
+                 target="_blank" rel="noopener">
+                Pedir orientação
+              </a>
             </div>
+
+            <div class="pills pills-spaced" aria-label="Atalhos">
+              <a class="pillbtn" href="#">Lanternas táticas</a>
+              <a class="pillbtn" href="#">Lanternas holofote</a>
+              <a class="pillbtn" href="#">Lanternas de cabeça</a>
+              <a class="pillbtn" href="#">Baterias recarregáveis</a>
+              <a class="pillbtn" href="#">Acessórios</a>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SEO TEXT -->
+    <!-- SEO + Destaques -->
     <section class="section">
       <div class="container">
         <div class="section-title center">
+
           <h2>Produtos para caça, camping, segurança, trabalho e lazer</h2>
 
-          <p class="maxch seo-text">
-  Se você chegou aqui pelo Google pesquisando por <em>lanterna tática</em>, <em>lanterna holofote recarregável</em>,
-  <em>lanterna de cabeça</em>, <em>iluminação LED</em> ou <em>baterias recarregáveis</em>, você está no lugar certo.
-  Nosso catálogo atende desde uso doméstico e emergências até aplicações profissionais.
-</p>
-        </div>
-      </div>
+          <!-- SEO TEXT (centralizado de forma inequívoca) -->
+          <div class="seoWrap">
+            <p class="maxch seo-text">
+              Se você chegou aqui pelo Google pesquisando por <em>lanterna tática</em>, <em>lanterna holofote recarregável</em>,
+              <em>lanterna de cabeça</em>, <em>iluminação LED</em> ou <em>baterias recarregáveis</em>, você está no lugar certo.
+              Nosso catálogo atende desde uso doméstico e emergências até aplicações profissionais.
+            </p>
+          </div>
 
-      <div class="pills" aria-label="Atalhos">
-  <a class="pillbtn" href="#">Lanternas táticas</a>
-  <a class="pillbtn" href="#">Lanternas holofote</a>
-  <a class="pillbtn" href="#">Lanternas de cabeça</a>
-  <a class="pillbtn" href="#">Baterias recarregáveis</a>
-  <a class="pillbtn" href="#">Acessórios</a>
-</div>
-<br>
-      <div class="container">
-        <div class="section-title center" style="margin-top:20px;">
+        </div>
+
+        <div class="section-title center section-gap-top">
           <h2>Produtos em destaque</h2>
         </div>
-<br>
-        <!-- 3 produtos (repetidos por enquanto) -->
-        <div class="grid">
+
+        <div class="grid grid-gap-top">
+          <!-- Produto 1 -->
           <article class="card">
             <img class="thumb" src="produtos/lanterna-holofote-super-led.png" alt="Lanterna Holofote Super LED 7045b">
             <div class="item center">
@@ -123,7 +116,7 @@
               <h3>Lanterna Holofote Super LED 7045b</h3>
               <p class="meta">240 lumens • Bi-volt • 2 modos (Econômico/Forte) • Alça para transporte</p>
               <p class="submeta">Ideal para segurança, camping, trabalho e emergências</p>
-              <div class="actions">
+              <div class="actions actions-spaced">
                 <a class="btn small primary" href="produtos/lanterna-holofote-super-led-7045b.html">Ver detalhes</a>
                 <a class="btn small"
                    href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20Lanterna%20Holofote%20Super%20LED%207045b.%20Pode%20me%20enviar%20pre%C3%A7o%20e%20condi%C3%A7%C3%B5es%3F"
@@ -134,6 +127,7 @@
             </div>
           </article>
 
+          <!-- Produto 2 (repete por enquanto) -->
           <article class="card">
             <img class="thumb" src="produtos/lanterna-holofote-super-led.png" alt="Lanterna Holofote Super LED 7045b">
             <div class="item center">
@@ -141,7 +135,7 @@
               <h3>Lanterna Holofote Super LED 7045b</h3>
               <p class="meta">240 lumens • Bi-volt • 2 modos (Econômico/Forte) • Alça para transporte</p>
               <p class="submeta">Ideal para segurança, camping, trabalho e emergências</p>
-              <div class="actions">
+              <div class="actions actions-spaced">
                 <a class="btn small primary" href="produtos/lanterna-holofote-super-led-7045b.html">Ver detalhes</a>
                 <a class="btn small"
                    href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20Lanterna%20Holofote%20Super%20LED%207045b.%20Pode%20me%20enviar%20pre%C3%A7o%20e%20condi%C3%A7%C3%B5es%3F"
@@ -152,6 +146,7 @@
             </div>
           </article>
 
+          <!-- Produto 3 (repete por enquanto) -->
           <article class="card">
             <img class="thumb" src="produtos/lanterna-holofote-super-led.png" alt="Lanterna Holofote Super LED 7045b">
             <div class="item center">
@@ -159,7 +154,7 @@
               <h3>Lanterna Holofote Super LED 7045b</h3>
               <p class="meta">240 lumens • Bi-volt • 2 modos (Econômico/Forte) • Alça para transporte</p>
               <p class="submeta">Ideal para segurança, camping, trabalho e emergências</p>
-              <div class="actions">
+              <div class="actions actions-spaced">
                 <a class="btn small primary" href="produtos/lanterna-holofote-super-led-7045b.html">Ver detalhes</a>
                 <a class="btn small"
                    href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20Lanterna%20Holofote%20Super%20LED%207045b.%20Pode%20me%20enviar%20pre%C3%A7o%20e%20condi%C3%A7%C3%B5es%3F"
@@ -173,11 +168,11 @@
       </div>
     </section>
 
-    <!-- Intro before footer -->
+    <!-- Sobre -->
     <section class="section">
       <div class="container">
         <div class="band center">
-          <h2 style="margin:0 0 10px;">Sobre a Dinax</h2>
+          <h2 class="titleGap">Sobre a Dinax</h2>
 
           <p class="maxch about-text">
             A Dinax é uma empresa com mais de duas décadas de experiência no mercado, trabalhando com lanternas, holofotes,
@@ -185,7 +180,7 @@
             com envio para todo o Brasil.
           </p>
 
-          <div class="ctas" style="margin-top:16px;">
+          <div class="ctas ctas-spaced">
             <a class="btn primary"
                href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Quero%20solicitar%20o%20cat%C3%A1logo%20da%20Dinax%20e%20um%20or%C3%A7amento."
                target="_blank" rel="noopener">
@@ -197,7 +192,7 @@
     </section>
   </main>
 
-  <!-- Footer escuro -->
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="center" style="opacity:.95;">
@@ -219,5 +214,25 @@
     </span>
     <span>WhatsApp</span>
   </a>
+
+  <!-- utilitários simples (para espaçamento + centralização, sem bagunça) -->
+  <style>
+    .nav-center{ justify-content:center; }
+    .brand-center{ min-width:auto; }
+    .logoTop{ max-width: 340px; width: 100%; height: auto; display:block; margin: 6px auto; }
+
+    .seoWrap{ text-align:center; display:block; }
+    .seoWrap .seo-text{ text-align:center; }
+
+    .ctas-spaced{ margin-top: 18px; }
+    .pills-spaced{ margin-top: 22px; }
+
+    .section-gap-top{ margin-top: 34px !important; }
+    .grid-gap-top{ margin-top: 18px; }
+
+    .actions-spaced{ margin-top: 16px; }
+
+    .titleGap{ margin: 0 0 14px; }
+  </style>
 </body>
 </html>
