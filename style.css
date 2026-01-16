@@ -48,7 +48,7 @@ a:hover{opacity:.92}
   align-items:center; justify-content:center;
   padding: 10px 0;
 }
-/* sem bold no topo */
+/* se você ainda tiver <strong> no HTML, ele não vai ficar bold "pesado" */
 .topbar strong{font-weight:600}
 .topbar .dot{opacity:.55}
 
@@ -142,7 +142,7 @@ header{
 
 /* Hero */
 .hero{
-  padding: 38px 0 24px;
+  padding: 54px 0 44px; /* mais respiro, mas sem exagero */
   background:
     radial-gradient(900px 380px at 50% 0%, rgba(255,212,0,.22), transparent 62%),
     linear-gradient(180deg, var(--soft), #fff);
@@ -151,50 +151,42 @@ header{
 .hero-grid{
   display:grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 18px;
 }
 h1{
   font-size: clamp(30px, 4.1vw, 46px);
   line-height:1.08;
-  margin: 12px 0 10px;
+  margin: 12px 0 14px; /* mais espaço abaixo */
   letter-spacing: -.5px;
 }
 .lead{
   color: var(--muted);
   font-size: 16px;
-  margin: 0 auto 18px;
+  margin: 0 auto 26px; /* mais respiro antes dos botões */
+  line-height: 1.7;
 }
 .ctas{
-  display:flex; gap: 12px; flex-wrap:wrap;
+  display:flex;
+  gap: 16px;
+  flex-wrap:wrap;
   justify-content:center;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 /* Pills (atalhos) */
 .pills{
   display:flex;
-  gap:10px;
+  gap:14px;
   flex-wrap:wrap;
   justify-content:center;
-  margin-top: 16px;
+  margin-top: 26px;
 }
 
-/* caso você ainda use .pill em algum lugar */
-.pill{
-  font-size: 13px;
-  color: var(--muted);
-  padding: 8px 12px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: rgba(255,255,255,.9);
-}
-
-/* novo botão pill que você quer usar */
 .pillbtn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding: 10px 14px;
+  padding: 11px 16px;
   border-radius: 999px;
   border: 1px solid rgba(17,24,39,.12);
   background: #fff;
@@ -208,51 +200,52 @@ h1{
 }
 
 /* Sections */
-.section{padding: 54px 0 64px;}
+.section{padding: 56px 0 70px;} /* mais respiro entre blocos */
 .section-title{
-  margin: 0 0 14px;
+  margin: 0 0 28px; /* mais espaço entre título e conteúdo */
   text-align:center;
 }
-.section-title .seo-text{
-  text-align: center;
-  margin-top: 18px;
-  margin-bottom: 28px;
-  line-height: 1.7;
-}
 .section-title h2{
-  margin:0 0 6px;
+  margin:0 0 14px;
   font-size: 22px;
   letter-spacing:-.2px;
 }
 .section-title p{
-  margin:0;
+  margin: 0;
   color: var(--muted);
+  line-height: 1.75;
 }
 
-/* CENTRALIZAR o texto SEO (sem depender de inline) */
+/* CENTRALIZAÇÃO REAL (desktop e mobile) */
 .seo-text, .about-text{
-  text-align:center;
-  margin-inline:auto;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Cards / grid */
 .grid{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 18px; /* mais respiro entre cards */
 }
+
 @media (max-width: 900px){
   .nav{flex-direction:column; align-items:flex-start}
   .navlinks{justify-content:flex-start}
   .grid{grid-template-columns: 1fr;}
 }
+
 .card{
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: 0 10px 22px rgba(17,24,39,.08);
+  overflow: hidden; /* ajuda a “fechar” bordas da thumb */
 }
-.item{padding: 16px;}
+
+.item{padding: 18px;}
 .kicker{
   font-size: 12px;
   color: var(--muted2);
@@ -260,25 +253,28 @@ h1{
   letter-spacing: .25px;
 }
 .item h3{
-  margin: 8px 0 8px;
+  margin: 12px 0 12px;
   font-size: 18px;
 }
 .meta{
-  margin:0 0 10px;
+  margin: 0 0 14px;
   color: var(--muted);
   font-size: 14px;
+  line-height: 1.65;
 }
 .submeta{
   font-size: 13px;
   color: var(--muted2);
-  margin-top: -4px;
-  margin-bottom: 8px;
+  margin: 0 0 14px;
+  line-height: 1.6;
 }
 
 .actions{
-  display:flex; gap:10px; flex-wrap:wrap;
+  display:flex;
+  gap: 14px;
+  flex-wrap:wrap;
   justify-content:center;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .thumb{
@@ -287,9 +283,7 @@ h1{
   object-fit: contain;
   background: var(--soft);
   border-bottom: 1px solid var(--border);
-  border-top-left-radius: var(--radius);
-  border-top-right-radius: var(--radius);
-  padding: 10px;
+  padding: 12px;
 }
 
 /* Intro box near footer */
@@ -297,11 +291,11 @@ h1{
   background: var(--soft);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 22px;
+  padding: 34px; /* mais confortável */
   box-shadow: 0 10px 26px rgba(17,24,39,.07);
 }
 
-/* Footer (dark like you liked) */
+/* Footer (dark) */
 footer{
   background: radial-gradient(900px 380px at 50% 0%, rgba(255,212,0,.18), transparent 60%),
               var(--ink);
@@ -355,63 +349,5 @@ footer a{color:#fff}
 @media (max-width: 520px){
   h1{ font-size: 30px; }
   .lead{ font-size: 15px; }
+  .section{ padding: 46px 0 56px; }
 }
-/* Respiro geral entre blocos */
-.section{
-  padding: 54px 0 64px;
-}
-
-/* Respiro no hero */
-.hero{
-  padding: 54px 0 64px;
-}
-
-.lead{
-  margin-bottom: 26px; /* antes era ~18px */
-}
-
-/* Botões mais “respirados” */
-.ctas{
-  margin-top: 22px;
-  gap: 16px;
-}
-
-/* Respiro entre título e texto das seções */
-.section-title h2{
-  margin-bottom: 14px;
-}
-
-.section-title p{
-  margin-top: 10px;
-}
-
-/* Cards mais arejados */
-.item h3{
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
-.meta{
-  margin-bottom: 14px;
-}
-
-.submeta{
-  margin-bottom: 14px;
-}
-
-.actions{
-  margin-top: 18px;
-  gap: 14px;
-}
-
-/* Pills com mais espaço */
-.pills{
-  margin-top: 24px;
-  gap: 14px;
-}
-
-/* Bloco "Sobre" mais confortável */
-.band{
-  padding: 32px;
-}
-
