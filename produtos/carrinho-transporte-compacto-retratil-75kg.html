@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Carrinho para Transporte Compacto e Retrátil até 75kg | Dinax</title>
+  <title>Carrinho para Transporte Compacto e Retrátil | Dinax</title>
   <meta name="description" content="Carrinho para transporte compacto e retrátil com capacidade de até 75kg. Ideal para entregas, estoque, feiras, mudanças leves e uso diário. Solicite orçamento via WhatsApp.">
   <meta name="robots" content="index,follow">
 
-  <meta property="og:title" content="Carrinho para Transporte Compacto e Retrátil até 75kg | Dinax">
+  <meta property="og:title" content="Carrinho para Transporte Compacto e Retrátil | Dinax">
   <meta property="og:description" content="Carrinho compacto e retrátil • Capacidade até 75kg. Solicite orçamento via WhatsApp.">
   <meta property="og:type" content="product">
   <meta property="og:locale" content="pt_BR">
@@ -48,18 +48,26 @@
     .block-gap-top{ margin-top: 24px; }
     .cta-gap-top{ margin-top: 18px; }
 
-    /* Galeria sem JS (não sobe a página ao trocar foto) */
+    /* Galeria sem JS (sem “pulo” ao trocar foto) */
     .gallery{
       position: relative;
       padding: 14px;
     }
+
+    /* Em vez de left:-9999px, escondemos de forma acessível e sem scroll */
     .gallery input{
       position: absolute;
-      left: -9999px;
-      top: 0;
-      opacity: 0;
-      pointer-events: none;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      clip-path: inset(50%);
+      white-space: nowrap;
+      border: 0;
     }
+
     .shots{ margin-top: 10px; }
     .shot{ display:none; margin:0; }
     .shot img{
@@ -89,6 +97,8 @@
       background:#fff;
       padding:6px;
       box-shadow: 0 8px 18px rgba(17,24,39,.08);
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
     }
     .thumbs img{
       width: 72px;
@@ -143,7 +153,7 @@
 
           <div class="ctas" style="margin-top:18px;">
             <a class="btn primary"
-               href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Carrinho%20para%20Transporte%20Compacto%20e%20Retr%C3%A1til%20(at%C3%A9%2075kg).%20Pode%20me%20enviar%20pre%C3%A7o%20e%20condi%C3%A7%C3%B5es%3F"
+               href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Carrinho%20para%20Transporte%20Compacto%20e%20Retr%C3%A1til.%20Pode%20me%20enviar%20pre%C3%A7o%20e%20condi%C3%A7%C3%B5es%3F"
                target="_blank" rel="noopener">
               Orçar no WhatsApp
             </a>
@@ -248,7 +258,7 @@
 
           <div class="ctas cta-gap-top">
             <a class="btn primary"
-               href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Quero%20or%C3%A7amento%20do%20Carrinho%20para%20Transporte%20Compacto%20e%20Retr%C3%A1til%20(at%C3%A9%2075kg)."
+               href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Quero%20or%C3%A7amento%20do%20Carrinho%20para%20Transporte%20Compacto%20e%20Retr%C3%A1til."
                target="_blank" rel="noopener">
               Pedir orçamento agora
             </a>
