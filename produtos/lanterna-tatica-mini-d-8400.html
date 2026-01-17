@@ -47,18 +47,26 @@
     .block-gap-top{ margin-top: 24px; }
     .cta-gap-top{ margin-top: 18px; }
 
-    /* Galeria sem JS */
+    /* Galeria sem JS (sem “pulo” ao trocar foto) */
     .gallery{
       position: relative;
       padding: 14px;
     }
+
+    /* IMPORTANTE: não usar left:-9999px (isso causa scroll em alguns browsers) */
     .gallery input{
       position: absolute;
-      left: -9999px;
-      top: 0;
-      opacity: 0;
-      pointer-events: none;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      clip-path: inset(50%);
+      white-space: nowrap;
+      border: 0;
     }
+
     .shots{ margin-top: 10px; }
     .shot{ display:none; margin:0; }
     .shot img{
@@ -88,6 +96,8 @@
       background:#fff;
       padding:6px;
       box-shadow: 0 8px 18px rgba(17,24,39,.08);
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
     }
     .thumbs img{
       width: 72px;
@@ -231,7 +241,7 @@
             <div class="card">
               <div class="item" style="text-align:left;">
                 <h3 style="margin:0 0 8px;">Quais são os modos de luz?</h3>
-                <p class="meta" style="margin:0;">Possui três modos: forte, pisca alerta e luz lateral.</p>
+                <p class="meta" style="margin:0;">Possui três modos, forte, pisca alerta e luz lateral.</p>
               </div>
             </div>
 
