@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Lanterna Tática T6 D-8501 Recarregável | Dinax</title>
-  <meta name="description" content="Lanterna tática T6 D-8501 com bateria recarregável 3.7v, carregador via cabo USB e 5 modos de luz (forte, normal, econômico, pisca alerta e S.O.S). Solicite orçamento via WhatsApp.">
-  <meta name="robots" content="index,follow">
+  <meta name="description" content="Lanterna tática T6 D-8501 com bateria recarregável 3.7v e carregamento via cabo USB. 5 modos de luz: forte, normal, econômico, pisca alerta e S.O.S. Solicite orçamento via WhatsApp.">
 
   <meta property="og:title" content="Lanterna Tática T6 D-8501 Recarregável | Dinax">
-  <meta property="og:description" content="Bateria recarregável 3.7v • 5 modos de luz • Carregador USB. Solicite orçamento via WhatsApp.">
+  <meta property="og:description" content="Bateria recarregável 3.7v • Carregamento via USB • 5 modos de luz. Solicite orçamento via WhatsApp.">
   <meta property="og:type" content="product">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:url" content="https://dinax.com.br/produtos/lanterna-tatica-t6-d-8501.html">
@@ -48,23 +47,29 @@
     .block-gap-top{ margin-top: 24px; }
     .cta-gap-top{ margin-top: 18px; }
 
-    /* Galeria sem JS (não sobe a página ao trocar foto) */
+    /* Galeria sem JS (corrigida: não provoca “pulo”/scroll ao trocar foto) */
     .gallery{
-      position: relative;
       padding: 14px;
-      background:#fff;
+      background: #fff;
       border-bottom: 1px solid var(--border);
       border-top-left-radius: var(--radius);
       border-top-right-radius: var(--radius);
     }
+
+    /* Esconde inputs sem jogar eles pra fora da tela */
     .gallery input{
-      position:absolute;
-      left:-9999px;
-      top:0;
-      opacity:0;
-      pointer-events:none;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+      clip-path: inset(50%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+      white-space: nowrap;
     }
-    .shots{ margin-top: 0; }
+
+    .shots{ margin-top: 6px; }
     .shot{ display:none; margin:0; }
     .shot img{
       width:100%;
@@ -93,7 +98,7 @@
       background:#fff;
       padding:6px;
       box-shadow: 0 8px 18px rgba(17,24,39,.08);
-      user-select:none;
+      user-select: none;
     }
     .thumbs img{
       width: 72px;
@@ -113,6 +118,7 @@
 </head>
 
 <body>
+
   <!-- Topbar -->
   <div class="topbar">
     <div class="container">
@@ -136,15 +142,15 @@
           </a>
 
           <div class="kicker" style="margin-bottom:10px;">
-            Lanternas Táticas • Recarregável • Portátil
+            Lanternas Táticas • Recarregável • Uso diário
           </div>
 
           <h1>Lanterna Tática T6 D-8501</h1>
 
           <p class="lead maxch" style="margin-top:10px;">
-            Lanterna tática com foco ajustável, <strong>bateria recarregável 3.7v</strong> e
-            <strong>5 modos de luz</strong>: forte, normal, econômico, pisca alerta e S.O.S.
-            Carregamento via cabo USB, ideal para segurança, trilhas, sítio e uso no carro.
+            Lanterna tática prática para o dia a dia, com <strong>bateria recarregável 3.7v</strong> e
+            <strong>carregamento via cabo USB</strong>. Possui <strong>5 modos de luz</strong> para diferentes situações,
+            ideal para emergências, carro, camping e serviços de apoio.
           </p>
 
           <div class="ctas" style="margin-top:18px;">
@@ -169,8 +175,8 @@
           <!-- Coluna principal -->
           <article class="card">
             <div class="gallery">
-              <input type="radio" name="gal8501" id="g1" checked>
-              <input type="radio" name="gal8501" id="g2">
+              <input type="radio" name="gal" id="g1" checked>
+              <input type="radio" name="gal" id="g2">
 
               <div class="shots">
                 <figure class="shot s1">
@@ -182,25 +188,29 @@
               </div>
 
               <div class="thumbs" aria-label="Mais fotos do produto">
-                <label for="g1"><img src="../produtos/lanterna-tatica-t6-d-8501-1.png" alt="Miniatura 1"></label>
-                <label for="g2"><img src="../produtos/lanterna-tatica-t6-d-8501-2.png" alt="Miniatura 2"></label>
+                <label for="g1" aria-label="Ver foto 1">
+                  <img src="../produtos/lanterna-tatica-t6-d-8501-1.png" alt="Miniatura 1">
+                </label>
+                <label for="g2" aria-label="Ver foto 2">
+                  <img src="../produtos/lanterna-tatica-t6-d-8501-2.png" alt="Miniatura 2">
+                </label>
               </div>
             </div>
 
             <div class="item" style="text-align:left;">
               <h2 style="margin:0 0 12px;">Descrição</h2>
               <p class="meta" style="font-size:15px;">
-                A <strong>Lanterna Tática T6 D-8501</strong> é uma opção versátil para quem busca iluminação forte com autonomia.
-                O conjunto acompanha <strong>bateria recarregável 3.7v</strong> e <strong>carregador via cabo USB</strong>, facilitando
-                o uso no dia a dia e em atividades externas.
+                A <strong>Lanterna Tática T6 D-8501</strong> é uma opção compacta e resistente para quem busca iluminação
+                confiável no dia a dia. O carregamento via USB facilita manter a lanterna sempre pronta, e os modos de luz
+                ajudam em diferentes cenários, desde uso comum até situações de emergência.
               </p>
 
               <h2 class="block-gap-top" style="margin-bottom:12px;">Onde usar</h2>
               <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.75;">
-                <li>Segurança e rondas</li>
-                <li>Trilhas, camping e pesca</li>
-                <li>Sítio e fazenda</li>
                 <li>Carro e kit de emergência</li>
+                <li>Camping, trilhas e sítio</li>
+                <li>Segurança, rondas e apoio operacional</li>
+                <li>Uso doméstico e manutenção</li>
               </ul>
             </div>
           </article>
@@ -211,11 +221,11 @@
               <h2 style="margin:0 0 12px;">Ficha técnica</h2>
 
               <div class="band" style="padding:18px;">
-                <p style="margin:0 0 10px;"><strong>Modelo:</strong> D-8501</p>
-                <p style="margin:0 0 10px;"><strong>Tipo:</strong> Lanterna tática T6</p>
-                <p style="margin:0 0 10px;"><strong>Bateria:</strong> Recarregável 3.7v</p>
+                <p style="margin:0 0 10px;"><strong>Modelo:</strong> D-8501 (T6)</p>
+                <p style="margin:0 0 10px;"><strong>Alimentação:</strong> Bateria recarregável 3.7v</p>
                 <p style="margin:0 0 10px;"><strong>Carregamento:</strong> Cabo USB</p>
-                <p style="margin:0;"><strong>Modos de luz:</strong> Forte, normal, econômico, pisca alerta e S.O.S</p>
+                <p style="margin:0 0 10px;"><strong>Modos de luz:</strong> Forte, normal, econômico, pisca alerta, S.O.S</p>
+                <p style="margin:0;"><strong>Uso:</strong> diário, emergências, camping, apoio e segurança</p>
               </div>
             </div>
           </aside>
@@ -228,8 +238,15 @@
           <div class="faq-grid">
             <div class="card">
               <div class="item" style="text-align:left;">
-                <h3 style="margin:0 0 8px;">Ela é recarregável?</h3>
-                <p class="meta" style="margin:0;">Sim, acompanha bateria 3.7v e carregamento via cabo USB.</p>
+                <h3 style="margin:0 0 8px;">Ela já vem com bateria?</h3>
+                <p class="meta" style="margin:0;">Sim, acompanha <strong>bateria recarregável 3.7v</strong>.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="item" style="text-align:left;">
+                <h3 style="margin:0 0 8px;">Como faz para carregar?</h3>
+                <p class="meta" style="margin:0;">O carregamento é via <strong>cabo USB</strong>, bem prático para o dia a dia.</p>
               </div>
             </div>
 
@@ -242,15 +259,8 @@
 
             <div class="card">
               <div class="item" style="text-align:left;">
-                <h3 style="margin:0 0 8px;">Serve para uso externo?</h3>
-                <p class="meta" style="margin:0;">Sim, é indicada para trilhas, sítio, fazenda, segurança e emergências.</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="item" style="text-align:left;">
                 <h3 style="margin:0 0 8px;">Como comprar?</h3>
-                <p class="meta" style="margin:0;">Solicite o catálogo e o orçamento via WhatsApp. Envio para todo o Brasil.</p>
+                <p class="meta" style="margin:0;">Solicite o catálogo e o orçamento via WhatsApp, enviamos para todo o Brasil.</p>
               </div>
             </div>
           </div>
@@ -285,3 +295,8 @@
         <path fill="#25D366" d="M12 2a9.8 9.8 0 0 0-8.4 14.9L2 22l5.2-1.5A9.8 9.8 0 1 0 12 2z"/>
         <path fill="#fff" d="M9.2 7.6c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .6.4.2.4.7 1.7.8 1.9.1.2.1.4 0 .6-.1.2-.2.3-.3.4l-.3.3c-.1.1-.3.3-.1.6.2.3.7 1.2 1.5 1.9.8.7 1.5.9 1.8 1 .2.1.4 0 .5-.2l.7-.8c.2-.2.3-.2.5-.1.2.1 1.5.7 1.8.9.3.1.4.2.5.3.1.2.1.9-.3 1.5-.3.5-1.2 1-1.8 1-.6 0-1.1-.2-2.6-.8-1.5-.7-2.5-1.7-3.4-2.9-.9-1.2-1.4-2.4-1.4-3.2 0-.8.3-1.5.6-2z"/>
       </svg>
+    </span>
+    <span>WhatsApp</span>
+  </a>
+</body>
+</html>
