@@ -42,7 +42,7 @@
 
   <style>
 
-    /* Ajustes exclusivos da página inicial */
+    /* AJUSTES EXCLUSIVOS DA PÁGINA INICIAL */
 
     .home-hero .lead {
       margin-top: 10px;
@@ -52,27 +52,51 @@
       padding-bottom: 0;
     }
 
-    .home-intro .section-title {
-      margin-bottom: 0;
+    /*
+      CORREÇÃO DO ALINHAMENTO
+
+      Centraliza título, parágrafo e atalhos,
+      independentemente das regras gerais
+      existentes no style.css.
+    */
+
+    .home-intro .home-intro-content {
+      width: 100%;
+      text-align: center;
     }
 
-    .home-seo-text {
+    .home-intro .home-intro-content h2 {
       text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .home-intro .home-seo-text {
+      display: block;
+      width: 100%;
+      max-width: 760px;
       margin: 18px auto 26px;
+      text-align: center !important;
       line-height: 1.75;
+    }
+
+    .home-intro .home-seo-text em {
+      text-align: inherit;
     }
 
     .home-category-links {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
       gap: 12px;
-      margin-top: 24px;
+      margin: 24px auto 0;
+      text-align: center;
     }
 
     /*
-      Espaço maior entre os botões de categorias
-      e a seção Produtos em destaque
+      ESPAÇO ENTRE OS BOTÕES DE CATEGORIAS
+      E A SEÇÃO PRODUTOS EM DESTAQUE
     */
 
     .featured-products {
@@ -86,16 +110,18 @@
 
     .featured-title h2 {
       margin: 0 0 12px;
+      text-align: center;
     }
 
     .featured-title p {
       color: var(--muted);
       margin: 0;
       line-height: 1.6;
+      text-align: center;
     }
 
     /*
-      Grade responsiva dos produtos
+      GRADE DOS PRODUTOS
     */
 
     .featured-grid {
@@ -139,7 +165,7 @@
     }
 
     /*
-      Botão abaixo dos produtos
+      BOTÃO VER TODOS OS PRODUTOS
     */
 
     .all-products-link {
@@ -149,12 +175,16 @@
     }
 
     /*
-      Espaço antes da seção Sobre
+      ESPAÇO ANTES DA SEÇÃO SOBRE
     */
 
     .home-about {
       padding-top: 54px;
     }
+
+    /*
+      TABLETS
+    */
 
     @media (max-width: 950px) {
 
@@ -168,7 +198,22 @@
 
     }
 
+    /*
+      CELULARES
+    */
+
     @media (max-width: 600px) {
+
+      .home-intro .home-intro-content h2 {
+        text-align: center;
+      }
+
+      .home-intro .home-seo-text {
+        max-width: 100%;
+        text-align: center !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       .featured-grid {
         grid-template-columns: 1fr;
@@ -193,7 +238,6 @@
     }
 
   </style>
-
 </head>
 
 <body>
@@ -250,7 +294,9 @@
                 href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20produtos."
                 target="_blank"
                 rel="noopener">
+
                 Comprar agora pelo WhatsApp
+
               </a>
 
             </div>
@@ -265,52 +311,57 @@
     <section class="section home-intro">
       <div class="container">
 
-        <div class="section-title center">
+        <!-- BLOCO CENTRALIZADO -->
+        <div class="home-intro-content center">
 
           <h2>
             Produtos para camping, segurança,
             trabalho, lazer, ciclismo, caça e pesca
           </h2>
 
-          <div style="text-align:center;">
+          <p class="home-seo-text">
 
-            <p class="maxch seo-text home-seo-text">
+            Se você chegou aqui pelo Google
+            pesquisando por
+            <em>lanterna tática</em>,
+            <em>lanterna holofote recarregável</em>,
+            <em>lanterna de cabeça</em>,
+            <em>iluminação LED</em>,
+            <em>baterias recarregáveis</em>
+            ou <em>acessórios para celular</em>,
+            você está no lugar certo.
 
-              Se você chegou aqui pelo Google
-              pesquisando por
-              <em>lanterna tática</em>,
-              <em>lanterna holofote recarregável</em>,
-              <em>lanterna de cabeça</em>,
-              <em>iluminação LED</em>,
-              <em>baterias recarregáveis</em>
-              ou <em>acessórios para celular</em>,
-              você está no lugar certo.
+            Nossa linha atende desde uso doméstico
+            e emergências até aplicações profissionais.
 
-              Nossa linha atende desde uso doméstico
-              e emergências até aplicações profissionais.
-
-            </p>
-
-          </div>
+          </p>
 
           <!-- BOTÕES DE NAVEGAÇÃO -->
           <div
             class="pills home-category-links"
             aria-label="Categorias de produtos">
 
-            <a class="pillbtn" href="lanternas.html">
+            <a
+              class="pillbtn"
+              href="lanternas.html">
               Lanternas
             </a>
 
-            <a class="pillbtn" href="baterias.html">
+            <a
+              class="pillbtn"
+              href="baterias.html">
               Baterias recarregáveis
             </a>
 
-            <a class="pillbtn" href="acessorios.html">
+            <a
+              class="pillbtn"
+              href="acessorios.html">
               Acessórios
             </a>
 
-            <a class="pillbtn" href="produtos.html">
+            <a
+              class="pillbtn"
+              href="produtos.html">
               Todos os produtos
             </a>
 
@@ -338,13 +389,13 @@
 
         <div class="featured-grid">
 
-          <!-- PRODUTO 1: LANTERNA DE CABEÇA BM-816 -->
+          <!-- PRODUTO 1: BM-816 -->
           <article class="card">
 
             <img
               class="thumb"
               src="produtos/lanterna-de-cabeca-led-bm-816-sensor-movimento.png"
-              alt="Lanterna de Cabeça LED Recarregável BM-816 com Sensor de Movimento"
+              alt="Lanterna de Cabeça LED BM-816"
               loading="lazy">
 
             <div class="item center">
@@ -359,11 +410,11 @@
 
               <p class="meta">
                 Sensor de movimento • Zoom ajustável
-                • Inclinação ajustável
+                • Recarregável
               </p>
 
               <p class="submeta">
-                Ideal para camping, pesca, trilhas
+                Para camping, pesca, trilhas
                 e manutenção com as mãos livres.
               </p>
 
@@ -436,13 +487,13 @@
             </div>
           </article>
 
-          <!-- PRODUTO 3: LANTERNA DE CABEÇA BM-807 -->
+          <!-- PRODUTO 3: BM-807 -->
           <article class="card">
 
             <img
               class="thumb"
               src="produtos/lanterna-de-cabeca-led-recarregavel-bm-807.png"
-              alt="Lanterna de Cabeça LED Recarregável BM-807"
+              alt="Lanterna de Cabeça LED BM-807"
               loading="lazy">
 
             <div class="item center">
@@ -456,12 +507,12 @@
               </h3>
 
               <p class="meta">
-                LED T6 • Zoom ajustável
-                • 3 modos de iluminação
+                Zoom ajustável • Recarregável
+                • Iluminação LED
               </p>
 
               <p class="submeta">
-                Ideal para pesca, camping,
+                Para pesca, camping,
                 trilhas e manutenção.
               </p>
 
@@ -535,7 +586,7 @@
             </div>
           </article>
 
-          <!-- PRODUTO 5: LANTERNA TÁTICA X-900 -->
+          <!-- PRODUTO 5: X-900 -->
           <article class="card">
 
             <img
@@ -560,8 +611,8 @@
               </p>
 
               <p class="submeta">
-                Ideal para pesca, trilhas,
-                camping, sítio e segurança.
+                Para pesca, trilhas, camping,
+                sítio e segurança.
               </p>
 
               <div class="actions">
@@ -584,7 +635,7 @@
             </div>
           </article>
 
-          <!-- PRODUTO 6: LANTERNA DE CABEÇA P50 -->
+          <!-- PRODUTO 6: P50 -->
           <article class="card">
 
             <img
@@ -609,7 +660,7 @@
               </p>
 
               <p class="submeta">
-                Ideal para trilhas, pesca,
+                Para trilhas, pesca,
                 ciclismo e manutenção.
               </p>
 
@@ -633,7 +684,7 @@
             </div>
           </article>
 
-          <!-- PRODUTO 7: CARRINHO PARA TRANSPORTE -->
+          <!-- PRODUTO 7: CARRINHO -->
           <article class="card">
 
             <img
@@ -659,7 +710,7 @@
               </p>
 
               <p class="submeta">
-                Ideal para entregas, estoque,
+                Para entregas, estoque,
                 feiras, escritório e uso doméstico.
               </p>
 
@@ -683,7 +734,7 @@
             </div>
           </article>
 
-          <!-- PRODUTO 8: LANTERNA MINI D-8400 -->
+          <!-- PRODUTO 8: MINI D-8400 -->
           <article class="card">
 
             <img
@@ -732,7 +783,7 @@
             </div>
           </article>
 
-          <!-- PRODUTO 9: LANTERNA DE CABEÇA 722B -->
+          <!-- PRODUTO 9: 722B -->
           <article class="card">
 
             <img
@@ -757,8 +808,8 @@
               </p>
 
               <p class="submeta">
-                Ideal para manutenção,
-                oficinas e trabalhos contínuos.
+                Para manutenção, oficinas
+                e trabalhos contínuos.
               </p>
 
               <div class="actions">
@@ -783,11 +834,15 @@
 
         </div>
 
-        <!-- BOTÃO VER TODOS OS PRODUTOS -->
+        <!-- VER TODOS OS PRODUTOS -->
         <div class="all-products-link">
 
-          <a class="pillbtn" href="produtos.html">
+          <a
+            class="pillbtn"
+            href="produtos.html">
+
             Ver todos os produtos
+
           </a>
 
         </div>
@@ -827,7 +882,9 @@
               href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20produtos%20do%20cat%C3%A1logo."
               target="_blank"
               rel="noopener">
+
               Falar no WhatsApp
+
             </a>
 
           </div>
@@ -843,8 +900,12 @@
   <footer>
     <div class="container">
 
-      <div class="center" style="opacity:.95;">
+      <div
+        class="center"
+        style="opacity:.95;">
+
         © 2026 Dinax · CNPJ: 18284516/0001-70
+
       </div>
 
     </div>
@@ -878,7 +939,7 @@
 
   </a>
 
-  <!-- MENSAGEM DE COMPRA INDIVIDUAL -->
+  <!-- MENSAGEM INDIVIDUAL DE COMPRA -->
   <script>
     document.querySelectorAll('[data-produto]').forEach(function(link) {
 
