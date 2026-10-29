@@ -14,6 +14,7 @@
   <meta property="og:description" content="Conheça as lanternas, baterias, carregadores e acessórios Dinax. Vendas no atacado com envio para todo o Brasil.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Dinax">
   <meta property="og:url" content="https://dinax.com.br/produtos.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,85 +25,86 @@
   <link rel="icon" href="assets/favicon-dinax.png" type="image/png">
 
   <style>
-    .hero .lead { margin-top:10px; }
-    .seo-block { margin-top:18px; }
-    .seo-block p { margin:0; line-height:1.75; }
+    .hero .lead {
+      margin-top: 10px;
+    }
+
+    .seo-block {
+      margin-top: 18px;
+    }
+
+    .seo-block p {
+      margin: 0;
+      line-height: 1.75;
+    }
 
     .catalog-heading {
-      text-align:center;
-      margin:0 0 24px;
+      text-align: center;
+      margin: 0 0 24px;
     }
 
     .catalog-heading p {
-      color:var(--muted);
-      margin:10px 0 0;
+      color: var(--muted);
+      margin: 10px 0 0;
     }
 
     .catalog-grid {
-      display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:18px;
-    }
-
-    @media(max-width:950px) {
-      .catalog-grid {
-        grid-template-columns:repeat(2,minmax(0,1fr));
-      }
-    }
-
-    @media(max-width:600px) {
-      .catalog-grid {
-        grid-template-columns:1fr;
-      }
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
     }
 
     .catalog-grid .card {
-      display:flex;
-      flex-direction:column;
-      min-width:0;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
     }
 
     .catalog-grid .thumb {
-      width:100%;
-      height:230px;
-      object-fit:contain;
-      background:#fff;
-      display:block;
+      width: 100%;
+      height: 230px;
+      object-fit: contain;
+      background: #fff;
+      display: block;
+      box-sizing: border-box;
     }
 
     .catalog-grid .item {
-      display:flex;
-      flex-direction:column;
-      flex:1;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
     }
 
     .catalog-grid .actions {
-      margin-top:auto !important;
-      padding-top:16px;
+      margin-top: auto !important;
+      padding-top: 16px;
     }
 
     .catalog-grid h3 {
-      line-height:1.35;
+      line-height: 1.35;
     }
 
     .catalog-grid .submeta {
-      margin-bottom:12px;
+      margin-bottom: 12px;
     }
 
-    .catalog-section {
-      margin-top:30px;
+    @media (max-width: 950px) {
+      .catalog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
 
-    .catalog-section h2 {
-      text-align:center;
-      margin-bottom:22px;
+    @media (max-width: 600px) {
+      .catalog-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Topbar -->
+  <!-- Barra superior -->
   <div class="topbar">
     <div class="container">
       <div class="inner">
@@ -117,13 +119,16 @@
 
   <main>
 
-    <!-- Hero -->
+    <!-- Apresentação -->
     <section class="hero">
       <div class="container">
         <div class="center">
 
           <a href="index.html" aria-label="Voltar para a página inicial">
-            <img class="logo-hero" src="assets/dinax-logo.png" alt="Dinax">
+            <img
+              class="logo-hero"
+              src="assets/dinax-logo.png"
+              alt="Dinax">
           </a>
 
           <div class="kicker" style="margin-bottom:10px;">
@@ -141,9 +146,11 @@
           </p>
 
           <div class="ctas" style="margin-top:18px;">
-            <a class="btn primary"
-               href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20produtos%20do%20cat%C3%A1logo."
-               target="_blank" rel="noopener">
+            <a
+              class="btn primary"
+              href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20produtos%20do%20cat%C3%A1logo."
+              target="_blank"
+              rel="noopener">
               Comprar agora pelo WhatsApp
             </a>
 
@@ -154,12 +161,12 @@
 
           <div class="seo-block maxch">
             <p>
-              Encontre lanternas táticas, lanternas
-              de cabeça recarregáveis, holofotes LED,
+              Encontre lanternas táticas, lanternas de
+              cabeça recarregáveis, holofotes LED,
               baterias de lítio 18650 e 26650,
-              carregadores e acessórios para
-              camping, pesca, manutenção,
-              trabalho, lazer e uso profissional.
+              carregadores e acessórios para camping,
+              pesca, manutenção, trabalho, lazer
+              e uso profissional.
             </p>
           </div>
 
@@ -167,394 +174,818 @@
       </div>
     </section>
 
-    <!-- Produtos -->
+    <!-- CATÁLOGO: TODOS OS PRODUTOS NA MESMA GRADE -->
     <section class="section">
       <div class="container">
 
         <div class="catalog-heading">
           <h2>Conheça nossos produtos</h2>
-          <p>Escolha um produto para ver suas características ou falar com nossa equipe de vendas.</p>
+          <p>
+            Escolha um produto para ver suas características
+            ou falar com nossa equipe de vendas.
+          </p>
         </div>
 
         <div class="catalog-grid">
 
-          <!-- PRODUTO 1 -->
+          <!-- PRODUTO 1 - NOVO: BM-807 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/lanterna-holofote-super-led.png"
-                 alt="Lanterna Holofote Super LED 7045b"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/lanterna-de-cabeca-led-recarregavel-bm-807.png"
+              alt="Lanterna de Cabeça LED Recarregável BM-807"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Lanternas Holofote • Recarregável</div>
+              <div class="kicker">
+                Lanternas de Cabeça • Recarregável
+              </div>
+
+              <h3>Lanterna de Cabeça LED BM-807</h3>
+
+              <p class="meta">
+                LED T6 • Zoom ajustável • 3 modos de iluminação
+              </p>
+
+              <p class="submeta">
+                Iluminação com mãos livres para pesca,
+                camping e manutenção.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn small primary"
+                  href="produtos/lanterna-de-cabeca-led-bm-807.html">
+                  Ver detalhes
+                </a>
+
+                <a
+                  class="btn small"
+                  data-produto="Lanterna de Cabeça LED BM-807"
+                  href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 2 - NOVO: BM-816 -->
+          <article class="card">
+            <img
+              class="thumb"
+              src="produtos/lanterna-de-cabeca-led-bm-816-sensor-movimento.png"
+              alt="Lanterna de Cabeça LED BM-816 com sensor de movimento"
+              loading="lazy">
+
+            <div class="item center">
+              <div class="kicker">
+                Lanternas de Cabeça • Sensor
+              </div>
+
+              <h3>Lanterna de Cabeça LED BM-816</h3>
+
+              <p class="meta">
+                Sensor de movimento • Zoom ajustável • Recarregável
+              </p>
+
+              <p class="submeta">
+                Para trilhas, camping, pesca e reparos
+                com as mãos livres.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn small primary"
+                  href="produtos/lanterna-de-cabeca-led-bm-816.html">
+                  Ver detalhes
+                </a>
+
+                <a
+                  class="btn small"
+                  data-produto="Lanterna de Cabeça LED BM-816"
+                  href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 3 - NOVO: CARREGADOR -->
+          <article class="card">
+            <img
+              class="thumb"
+              src="produtos/carregador-duplo-baterias-litio-18650.png"
+              alt="Carregador Duplo para Baterias de Lítio 18650"
+              loading="lazy">
+
+            <div class="item center">
+              <div class="kicker">
+                Carregadores • Baterias 18650
+              </div>
+
+              <h3>Carregador Duplo de Baterias 18650</h3>
+
+              <p class="meta">
+                2 slots • Baterias Li-ion 18650 • Alimentação por tomada
+              </p>
+
+              <p class="submeta">
+                Para recarregar baterias de equipamentos compatíveis.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn small primary"
+                  href="produtos/carregador-duplo-baterias-18650.html">
+                  Ver detalhes
+                </a>
+
+                <a
+                  class="btn small"
+                  data-produto="Carregador Duplo de Baterias 18650"
+                  href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 4 - NOVO: BM-8534 -->
+          <article class="card">
+            <img
+              class="thumb"
+              src="produtos/lanterna-tatica-super-led-bm-8534.png"
+              alt="Lanterna Tática Super LED BM-8534"
+              loading="lazy">
+
+            <div class="item center">
+              <div class="kicker">
+                Lanternas Táticas • Zoom
+              </div>
+
+              <h3>Lanterna Tática Super LED BM-8534</h3>
+
+              <p class="meta">
+                Super LED • Zoom ajustável • Estrutura metálica
+              </p>
+
+              <p class="submeta">
+                Para iluminação direcionada,
+                camping e manutenção.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn small primary"
+                  href="produtos/lanterna-tatica-super-led-bm-8534.html">
+                  Ver detalhes
+                </a>
+
+                <a
+                  class="btn small"
+                  data-produto="Lanterna Tática Super LED BM-8534"
+                  href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 5 - NOVO: BM-35 -->
+          <article class="card">
+            <img
+              class="thumb"
+              src="produtos/bastao-selfie-tripe-bluetooth-bm-35.png"
+              alt="Bastão Selfie Tripé Bluetooth BM-35"
+              loading="lazy">
+
+            <div class="item center">
+              <div class="kicker">
+                Acessórios • Bluetooth • 3 em 1
+              </div>
+
+              <h3>Bastão Selfie Tripé BM-35</h3>
+
+              <p class="meta">
+                Controle Bluetooth • Tripé integrado • Suporte ajustável
+              </p>
+
+              <p class="submeta">
+                Ideal para selfies, fotos,
+                vídeos e criação de conteúdo.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn small primary"
+                  href="produtos/bastao-selfie-tripe-bluetooth-bm-35.html">
+                  Ver detalhes
+                </a>
+
+                <a
+                  class="btn small"
+                  data-produto="Bastão Selfie Tripé Bluetooth BM-35"
+                  href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 6 - NOVO: BATERIA 26650 -->
+          <article class="card">
+            <img
+              class="thumb"
+              src="produtos/bateria-litio-recarregavel-26650-12000mah.png"
+              alt="Bateria de Lítio Recarregável 26650"
+              loading="lazy">
+
+            <div class="item center">
+              <div class="kicker">
+                Baterias • Li-ion • Recarregável
+              </div>
+
+              <h3>Bateria de Lítio 26650</h3>
+
+              <p class="meta">
+                3,7V nominal • Formato 26650 • Recarregável
+              </p>
+
+              <p class="submeta">
+                Para lanternas táticas e equipamentos compatíveis.
+              </p>
+
+              <div class="actions">
+                <a
+                  class="btn small primary"
+                  href="produtos/bateria-litio-recarregavel-26650.html">
+                  Ver detalhes
+                </a>
+
+                <a
+                  class="btn small"
+                  data-produto="Bateria de Lítio Recarregável 26650"
+                  href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUTO 7: HOLOFOTE 7045B -->
+          <article class="card">
+            <img
+              class="thumb"
+              src="produtos/lanterna-holofote-super-led.png"
+              alt="Lanterna Holofote Super LED 7045b"
+              loading="lazy">
+
+            <div class="item center">
+              <div class="kicker">
+                Lanternas Holofote • Recarregável
+              </div>
+
               <h3>Lanterna Holofote Super LED 7045b</h3>
-              <p class="meta">240 lumens • Bivolt • 2 modos de iluminação • Alça para transporte</p>
-              <p class="submeta">Ideal para segurança, camping, trabalho e emergências.</p>
+
+              <p class="meta">
+                240 lumens • Bivolt • 2 modos de iluminação
+              </p>
+
+              <p class="submeta">
+                Ideal para segurança, camping,
+                trabalho e emergências.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/lanterna-holofote-super-led-7045b.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Lanterna Holofote Super LED 7045b" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/lanterna-holofote-super-led-7045b.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Lanterna Holofote Super LED 7045b"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 2 -->
+          <!-- PRODUTO 8: X-900 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/lanterna-tatica-x900-1.png"
-                 alt="Lanterna Tática X-900"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/lanterna-tatica-x900-1.png"
+              alt="Lanterna Tática X-900"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Lanternas Táticas • Recarregável</div>
+              <div class="kicker">
+                Lanternas Táticas • Recarregável
+              </div>
+
               <h3>Lanterna Tática X-900</h3>
-              <p class="meta">5 modos de luz • Bateria recarregável 3,7V • Carregamento USB</p>
-              <p class="submeta">Para pesca, trilhas, camping, sítio e segurança.</p>
+
+              <p class="meta">
+                5 modos de luz • Bateria 3,7V • Carregamento USB
+              </p>
+
+              <p class="submeta">
+                Para pesca, trilhas, camping,
+                sítio e segurança.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/lanterna-tatica-x900.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Lanterna Tática X-900" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/lanterna-tatica-x900.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Lanterna Tática X-900"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 3 -->
+          <!-- PRODUTO 9: P50 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/lanterna-de-cabeca-led-p50.png"
-                 alt="Lanterna de Cabeça LED P50"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/lanterna-de-cabeca-led-p50.png"
+              alt="Lanterna de Cabeça LED P50"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Lanternas de Cabeça • Recarregável</div>
+              <div class="kicker">
+                Lanternas de Cabeça • Recarregável
+              </div>
+
               <h3>Lanterna de Cabeça LED P50</h3>
-              <p class="meta">4 modos de luz • Zoom ajustável • 2 baterias recarregáveis</p>
-              <p class="submeta">Ideal para trilhas, ciclismo, pesca e manutenção.</p>
+
+              <p class="meta">
+                4 modos de luz • Zoom ajustável • 2 baterias
+              </p>
+
+              <p class="submeta">
+                Ideal para trilhas, ciclismo,
+                pesca e manutenção.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/lanterna-de-cabeca-led-p50.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Lanterna de Cabeça LED P50" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/lanterna-de-cabeca-led-p50.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Lanterna de Cabeça LED P50"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 4 -->
+          <!-- PRODUTO 10: CARRINHO -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/carrinho-transporte-compacto-retratil-75kg-1.png"
-                 alt="Carrinho para Transporte Compacto Retrátil"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/carrinho-transporte-compacto-retratil-75kg-1.png"
+              alt="Carrinho para Transporte Compacto Retrátil"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Acessórios • Transporte</div>
+              <div class="kicker">
+                Acessórios • Transporte
+              </div>
+
               <h3>Carrinho para Transporte</h3>
-              <p class="meta">Capacidade até 75kg • Compacto • Retrátil</p>
-              <p class="submeta">Para entregas, estoque, feiras e uso doméstico.</p>
+
+              <p class="meta">
+                Capacidade até 75kg • Compacto • Retrátil
+              </p>
+
+              <p class="submeta">
+                Para entregas, estoque,
+                feiras e uso doméstico.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/carrinho-transporte-compacto-retratil-75kg.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Carrinho para Transporte Compacto Retrátil" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/carrinho-transporte-compacto-retratil-75kg.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Carrinho para Transporte Compacto Retrátil"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 5 -->
+          <!-- PRODUTO 11: MINI D-8400 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/lanterna-tatica-mini-d-8400-1.png"
-                 alt="Lanterna Tática Mini D-8400"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/lanterna-tatica-mini-d-8400-1.png"
+              alt="Lanterna Tática Mini D-8400"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Lanternas Táticas • Compacta</div>
+              <div class="kicker">
+                Lanternas Táticas • Compacta
+              </div>
+
               <h3>Lanterna Tática Mini D-8400</h3>
-              <p class="meta">Recarregável USB • 3 funções de iluminação</p>
-              <p class="submeta">Compacta para carro, emergências e camping.</p>
+
+              <p class="meta">
+                Recarregável USB • 3 funções de iluminação
+              </p>
+
+              <p class="submeta">
+                Compacta para carro,
+                emergências e camping.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/lanterna-tatica-mini-d-8400.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Lanterna Tática Mini D-8400" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/lanterna-tatica-mini-d-8400.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Lanterna Tática Mini D-8400"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 6 -->
+          <!-- PRODUTO 12: 722B -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/lanterna-cabeca-12-leds-722b.png"
-                 alt="Lanterna de Cabeça 12 LEDs 722b"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/lanterna-cabeca-12-leds-722b.png"
+              alt="Lanterna de Cabeça 12 LEDs 722b"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Lanternas de Cabeça</div>
+              <div class="kicker">
+                Lanternas de Cabeça
+              </div>
+
               <h3>Lanterna de Cabeça 12 LEDs 722b</h3>
-              <p class="meta">12 LEDs • 60 lumens • Bateria 800mAh</p>
-              <p class="submeta">Para manutenção, oficinas e trabalhos técnicos.</p>
+
+              <p class="meta">
+                12 LEDs • 60 lumens • Bateria 800mAh
+              </p>
+
+              <p class="submeta">
+                Para manutenção,
+                oficinas e trabalhos técnicos.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/lanterna-cabeca-12-leds-722b.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Lanterna de Cabeça 12 LEDs 722b" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/lanterna-cabeca-12-leds-722b.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Lanterna de Cabeça 12 LEDs 722b"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 7 -->
+          <!-- PRODUTO 13: D-770 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/lanterna-led-holofote-d-770-1.png"
-                 alt="Lanterna LED Holofote D-770"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/lanterna-led-holofote-d-770-1.png"
+              alt="Lanterna LED Holofote D-770"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Lanternas Holofote</div>
+              <div class="kicker">
+                Lanternas Holofote
+              </div>
+
               <h3>Lanterna LED Holofote D-770</h3>
-              <p class="meta">1+15 LEDs • 1300mAh • Bivolt • 90 lumens</p>
-              <p class="submeta">Ideal para trabalho, camping e emergências.</p>
+
+              <p class="meta">
+                1+15 LEDs • 1300mAh • Bivolt • 90 lumens
+              </p>
+
+              <p class="submeta">
+                Ideal para trabalho,
+                camping e emergências.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/lanterna-led-holofote-d-770.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Lanterna LED Holofote D-770" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/lanterna-led-holofote-d-770.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Lanterna LED Holofote D-770"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 8 -->
+          <!-- PRODUTO 14: TRIPÉ D-3600 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/tripe-profissional-d-3600-1.png"
-                 alt="Tripé Profissional D-3600"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/tripe-profissional-d-3600-1.png"
+              alt="Tripé Profissional D-3600"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Acessórios • Fotografia</div>
+              <div class="kicker">
+                Acessórios • Fotografia
+              </div>
+
               <h3>Tripé Profissional D-3600</h3>
-              <p class="meta">Altura ajustável até 1,8m • Estrutura reforçada</p>
-              <p class="submeta">Para fotografia, vídeos, estúdios e lives.</p>
+
+              <p class="meta">
+                Altura ajustável até 1,8m • Estrutura reforçada
+              </p>
+
+              <p class="submeta">
+                Para fotografia, vídeos,
+                estúdios e lives.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/tripe-profissional-d-3600.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Tripé Profissional D-3600" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/tripe-profissional-d-3600.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Tripé Profissional D-3600"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 9 -->
+          <!-- PRODUTO 15: D-8501 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/lanterna-tatica-t6-d-8501-1.png"
-                 alt="Lanterna Tática T6 D-8501"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/lanterna-tatica-t6-d-8501-1.png"
+              alt="Lanterna Tática T6 D-8501"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Lanternas Táticas • USB</div>
+              <div class="kicker">
+                Lanternas Táticas • USB
+              </div>
+
               <h3>Lanterna Tática T6 D-8501</h3>
-              <p class="meta">Bateria 3,7V • Carregamento USB • 5 modos de luz</p>
-              <p class="submeta">Para carro, camping, trilhas e emergências.</p>
+
+              <p class="meta">
+                Bateria 3,7V • Carregamento USB • 5 modos
+              </p>
+
+              <p class="submeta">
+                Para carro, camping,
+                trilhas e emergências.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/lanterna-tatica-t6-d-8501.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Lanterna Tática T6 D-8501" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/lanterna-tatica-t6-d-8501.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Lanterna Tática T6 D-8501"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 10 -->
+          <!-- PRODUTO 16: BATERIA 18650 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/bateria-recarregavel-18650-8000mah.png"
-                 alt="Bateria Recarregável 18650"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/bateria-recarregavel-18650-8000mah.png"
+              alt="Bateria Recarregável 18650"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Baterias • Recarregável</div>
+              <div class="kicker">
+                Baterias • Recarregável
+              </div>
+
               <h3>Bateria 18650 3,7V</h3>
-              <p class="meta">Li-ion • 3,7V • Indicação comercial de 8000mAh</p>
-              <p class="submeta">Para lanternas e equipamentos compatíveis.</p>
+
+              <p class="meta">
+                Li-ion • 3,7V • Indicação comercial de 8000mAh
+              </p>
+
+              <p class="submeta">
+                Para lanternas e
+                equipamentos compatíveis.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/bateria-recarregavel-18650-8000mah.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Bateria Recarregável 18650 3,7V" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/bateria-recarregavel-18650-8000mah.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Bateria Recarregável 18650 3,7V"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 11 -->
+          <!-- PRODUTO 17: D-8466 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/lanterna-tatica-1200-lumens-d-8466-2.png"
-                 alt="Lanterna Tática D-8466"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/lanterna-tatica-1200-lumens-d-8466-2.png"
+              alt="Lanterna Tática D-8466"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Lanternas Táticas</div>
+              <div class="kicker">
+                Lanternas Táticas
+              </div>
+
               <h3>Lanterna Tática D-8466</h3>
-              <p class="meta">1200 lumens informados • 3 modos • Recarregável</p>
-              <p class="submeta">Para segurança, carro e uso externo.</p>
+
+              <p class="meta">
+                1200 lumens informados • 3 modos • Recarregável
+              </p>
+
+              <p class="submeta">
+                Para segurança,
+                carro e uso externo.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/lanterna-tatica-1200-lumens-d-8466.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Lanterna Tática D-8466" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/lanterna-tatica-1200-lumens-d-8466.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Lanterna Tática D-8466"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 12 -->
+          <!-- PRODUTO 18: D-423 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/lanterna-led-tatica-d-423-2.png"
-                 alt="Lanterna LED Tática D-423"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/lanterna-led-tatica-d-423-2.png"
+              alt="Lanterna LED Tática D-423"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Lanternas Táticas • Acessórios</div>
+              <div class="kicker">
+                Lanternas Táticas • Acessórios
+              </div>
+
               <h3>Lanterna LED Tática D-423</h3>
-              <p class="meta">2 baterias recarregáveis • Carregador duplo • Cone sinalizador</p>
-              <p class="submeta">Para camping, pesca, trilhas e segurança.</p>
+
+              <p class="meta">
+                2 baterias • Carregador duplo • Cone sinalizador
+              </p>
+
+              <p class="submeta">
+                Para camping, pesca,
+                trilhas e segurança.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/lanterna-led-tatica-d-423.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Lanterna LED Tática D-423" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/lanterna-led-tatica-d-423.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Lanterna LED Tática D-423"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 13 -->
+          <!-- PRODUTO 19: LANTERNA UV -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/lanterna-uv-detector-notas-falsas.png"
-                 alt="Lanterna UV Detector de Notas Falsas"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/lanterna-uv-detector-notas-falsas.png"
+              alt="Lanterna UV Detector de Notas Falsas"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Lanternas UV • Recarregável</div>
+              <div class="kicker">
+                Lanternas UV • Recarregável
+              </div>
+
               <h3>Lanterna UV Detector de Notas Falsas</h3>
-              <p class="meta">Luz ultravioleta • Recarregável USB • Compacta</p>
-              <p class="submeta">Para visualizar marcas de segurança UV.</p>
+
+              <p class="meta">
+                Luz ultravioleta • Recarregável USB • Compacta
+              </p>
+
+              <p class="submeta">
+                Para visualizar marcas de segurança UV.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/lanterna-uv-detector-notas-falsas.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Lanterna UV Detector de Notas Falsas" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/lanterna-uv-detector-notas-falsas.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Lanterna UV Detector de Notas Falsas"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- PRODUTO 14 -->
+          <!-- PRODUTO 20: D-8411 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/lanterna-tatica-d-8411.png"
-                 alt="Lanterna Tática D-8411"
-                 loading="lazy">
+            <img
+              class="thumb"
+              src="produtos/lanterna-tatica-d-8411.png"
+              alt="Lanterna Tática D-8411"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Lanternas Táticas • Compacta</div>
+              <div class="kicker">
+                Lanternas Táticas • Compacta
+              </div>
+
               <h3>Lanterna Tática D-8411</h3>
-              <p class="meta">Cree LED • Recarregável USB • Compacta</p>
-              <p class="submeta">Para manutenção, camping e uso doméstico.</p>
+
+              <p class="meta">
+                Cree LED • Recarregável USB • Compacta
+              </p>
+
+              <p class="submeta">
+                Para manutenção,
+                camping e uso doméstico.
+              </p>
+
               <div class="actions">
-                <a class="btn small primary" href="produtos/lanterna-tatica-d-8411.html">Ver detalhes</a>
-                <a class="btn small" data-produto="Lanterna Tática D-8411" href="#">Comprar</a>
+                <a class="btn small primary"
+                   href="produtos/lanterna-tatica-d-8411.html">
+                  Ver detalhes
+                </a>
+
+                <a class="btn small"
+                   data-produto="Lanterna Tática D-8411"
+                   href="https://wa.me/5551999862098">
+                  Comprar
+                </a>
               </div>
             </div>
           </article>
 
         </div>
-
-        <!-- NOVOS PRODUTOS -->
-        <div class="catalog-section">
-          <h2>Mais produtos Dinax</h2>
-
-          <div class="catalog-grid">
-
-            <!-- PRODUTO 15: BM-807 -->
-            <article class="card">
-              <img class="thumb"
-                   src="produtos/lanterna-cabeca-bm-807.png"
-                   alt="Lanterna de Cabeça BM-807 LED com zoom"
-                   loading="lazy">
-              <div class="item center">
-                <div class="kicker">Lanternas de Cabeça • Recarregável</div>
-                <h3>Lanterna de Cabeça BM-807</h3>
-                <p class="meta">LED Cree T6 • Zoom ajustável • 3 modos de iluminação</p>
-                <p class="submeta">Iluminação com mãos livres para pesca, camping e manutenção.</p>
-                <div class="actions">
-                  <a class="btn small primary" href="produtos/lanterna-cabeca-bm-807.html">Ver detalhes</a>
-                  <a class="btn small" data-produto="Lanterna de Cabeça BM-807" href="#">Comprar</a>
-                </div>
-              </div>
-            </article>
-
-            <!-- PRODUTO 16: BM-816 -->
-            <article class="card">
-              <img class="thumb"
-                   src="produtos/lanterna-cabeca-bm-816.png"
-                   alt="Lanterna de Cabeça BM-816 com sensor de movimento"
-                   loading="lazy">
-              <div class="item center">
-                <div class="kicker">Lanternas de Cabeça • Sensor</div>
-                <h3>Lanterna de Cabeça BM-816</h3>
-                <p class="meta">Sensor de movimento • Zoom ajustável • Recarregável</p>
-                <p class="submeta">Para trilhas, camping, pesca e reparos com as mãos livres.</p>
-                <div class="actions">
-                  <a class="btn small primary" href="produtos/lanterna-cabeca-bm-816.html">Ver detalhes</a>
-                  <a class="btn small" data-produto="Lanterna de Cabeça BM-816" href="#">Comprar</a>
-                </div>
-              </div>
-            </article>
-
-            <!-- PRODUTO 17: CARREGADOR -->
-            <article class="card">
-              <img class="thumb"
-                   src="produtos/carregador-duplo-baterias-litio-18650.png"
-                   alt="Carregador Duplo para Baterias de Lítio 18650"
-                   loading="lazy">
-              <div class="item center">
-                <div class="kicker">Carregadores • Baterias 18650</div>
-                <h3>Carregador Duplo de Baterias 18650</h3>
-                <p class="meta">2 slots • Baterias Li-ion 18650 • Alimentação por tomada</p>
-                <p class="submeta">Para recarregar baterias utilizadas em equipamentos compatíveis.</p>
-                <div class="actions">
-                  <a class="btn small primary" href="produtos/carregador-duplo-baterias-18650.html">Ver detalhes</a>
-                  <a class="btn small" data-produto="Carregador Duplo de Baterias 18650" href="#">Comprar</a>
-                </div>
-              </div>
-            </article>
-
-            <!-- PRODUTO 18: BM-8534 -->
-            <article class="card">
-              <img class="thumb"
-                   src="produtos/lanterna-tatica-super-led-bm-8534.png"
-                   alt="Lanterna Tática Super LED BM-8534"
-                   loading="lazy">
-              <div class="item center">
-                <div class="kicker">Lanternas Táticas • Zoom</div>
-                <h3>Lanterna Tática Super LED BM-8534</h3>
-                <p class="meta">Super LED • Zoom ajustável • Estrutura metálica • Recarregável</p>
-                <p class="submeta">Para iluminação direcionada, camping e manutenção.</p>
-                <div class="actions">
-                  <a class="btn small primary" href="produtos/lanterna-tatica-super-led-bm-8534.html">Ver detalhes</a>
-                  <a class="btn small" data-produto="Lanterna Tática Super LED BM-8534" href="#">Comprar</a>
-                </div>
-              </div>
-            </article>
-
-            <!-- PRODUTO 19: BM-35 -->
-            <article class="card">
-              <img class="thumb"
-                   src="produtos/bastao-selfie-tripe-bluetooth-bm-35.png"
-                   alt="Bastão Selfie Tripé Bluetooth BM-35"
-                   loading="lazy">
-              <div class="item center">
-                <div class="kicker">Acessórios • Bluetooth • 3 em 1</div>
-                <h3>Bastão Selfie Tripé BM-35</h3>
-                <p class="meta">Controle Bluetooth • Tripé integrado • Suporte 360°</p>
-                <p class="submeta">Ideal para selfies, fotos, vídeos e criação de conteúdo.</p>
-                <div class="actions">
-                  <a class="btn small primary" href="produtos/bastao-selfie-tripe-bluetooth-bm-35.html">Ver detalhes</a>
-                  <a class="btn small" data-produto="Bastão Selfie Tripé Bluetooth BM-35" href="#">Comprar</a>
-                </div>
-              </div>
-            </article>
-
-            <!-- PRODUTO 20: BATERIA 26650 -->
-            <article class="card">
-              <img class="thumb"
-                   src="produtos/bateria-litio-recarregavel-26650-12000mah.png"
-                   alt="Bateria de Lítio Recarregável 26650"
-                   loading="lazy">
-              <div class="item center">
-                <div class="kicker">Baterias • Li-ion • Recarregável</div>
-                <h3>Bateria de Lítio 26650</h3>
-                <p class="meta">3,7V nominal • Formato 26650 • Recarregável</p>
-                <p class="submeta">Para lanternas táticas e equipamentos compatíveis.</p>
-                <div class="actions">
-                  <a class="btn small primary" href="produtos/bateria-litio-recarregavel-26650.html">Ver detalhes</a>
-                  <a class="btn small" data-produto="Bateria de Lítio Recarregável 26650" href="#">Comprar</a>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div>
+        <!-- FIM DA GRADE ÚNICA DE 20 PRODUTOS -->
 
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
+  <!-- Rodapé -->
   <footer>
     <div class="container">
       <div class="center" style="opacity:.95;">
@@ -564,21 +995,28 @@
   </footer>
 
   <!-- WhatsApp flutuante -->
-  <a class="whats-float"
-     href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20um%20produto."
-     target="_blank"
-     rel="noopener"
-     aria-label="Falar com vendas pelo WhatsApp">
+  <a
+    class="whats-float"
+    href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20um%20produto."
+    target="_blank"
+    rel="noopener"
+    aria-label="Falar com vendas pelo WhatsApp">
+
     <span class="bubble" aria-hidden="true">
       <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="#25D366" d="M12 2a9.8 9.8 0 0 0-8.4 14.9L2 22l5.2-1.5A9.8 9.8 0 1 0 12 2z"/>
-        <path fill="#fff" d="M9.2 7.6c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .6.4.2.4.7 1.7.8 1.9.1.2.1.4 0 .6-.1.2-.2.3-.3.4l-.3.3c-.1.1-.3.3-.1.6.2.3.7 1.2 1.5 1.9.8.7 1.5.9 1.8 1 .2.1.4 0 .5-.2l.7-.8c.2-.2.3-.2.5-.1.2.1 1.5.7 1.8.9.3.1.4.2.5.3.1.2.1.9-.3 1.5-.3.5-1.2 1-1.8 1-.6 0-1.1-.2-2.6-.8-1.5-.7-2.5-1.7-3.4-2.9-.9-1.2-1.4-2.4-1.4-3.2 0-.8.3-1.5.6-2z"/>
+        <path
+          fill="#25D366"
+          d="M12 2a9.8 9.8 0 0 0-8.4 14.9L2 22l5.2-1.5A9.8 9.8 0 1 0 12 2z"/>
+        <path
+          fill="#fff"
+          d="M9.2 7.6c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .6.4.2.4.7 1.7.8 1.9.1.2.1.4 0 .6-.1.2-.2.3-.3.4l-.3.3c-.1.1-.3.3-.1.6.2.3.7 1.2 1.5 1.9.8.7 1.5.9 1.8 1 .2.1.4 0 .5-.2l.7-.8c.2-.2.3-.2.5-.1.2.1 1.5.7 1.8.9.3.1.4.2.5.3.1.2.1.9-.3 1.5-.3.5-1.2 1-1.8 1-.6 0-1.1-.2-2.6-.8-1.5-.7-2.5-1.7-3.4-2.9-.9-1.2-1.4-2.4-1.4-3.2 0-.8.3-1.5.6-2z"/>
       </svg>
     </span>
+
     <span>WhatsApp</span>
   </a>
 
-  <!-- WhatsApp individual por produto -->
+  <!-- Mensagem de compra específica para cada produto -->
   <script>
     document.querySelectorAll('[data-produto]').forEach(function(link) {
       var produto = link.getAttribute('data-produto');
