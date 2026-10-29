@@ -1,142 +1,550 @@
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
-    
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Acessórios | Dinax</title>
-  <meta name="description" content="Acessórios Dinax: carrinho de transporte retrátil e tripé profissional para câmeras. Envio para todo o Brasil. Solicite catálogo e orçamento via WhatsApp.">
+  <title>Acessórios para Celular, Foto, Vídeo e Transporte | Dinax</title>
+
+  <meta
+    name="description"
+    content="Acessórios Dinax no atacado: carregador duplo de baterias 18650, bastão selfie tripé Bluetooth BM-35, carrinho de transporte retrátil e tripé profissional D-3600. Envio para todo o Brasil.">
+
   <meta name="robots" content="index,follow">
 
-  <link rel="canonical" href="https://dinax.com.br/acessorios.html">
+  <link
+    rel="canonical"
+    href="https://dinax.com.br/acessorios.html">
 
+  <meta property="og:title" content="Acessórios | Dinax">
+
+  <meta
+    property="og:description"
+    content="Carregadores, acessórios para celular, tripés e carrinhos de transporte. Compre no atacado com a Dinax.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Dinax">
+  <meta
+    property="og:url"
+    content="https://dinax.com.br/acessorios.html">
+
+  <!-- Fonte Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS principal -->
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/favicon-dinax.png" type="image/png">
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    href="assets/favicon-dinax.png"
+    type="image/png">
 
   <style>
-    .hero .lead{ margin-top: 10px; }
-    .seo-block{ margin-top: 18px; }
-    .seo-block p{ margin: 0; line-height: 1.75; }
+
+    /* Ajustes exclusivos da página de acessórios */
+
+    .hero .lead {
+      margin-top: 10px;
+    }
+
+    .seo-block {
+      margin-top: 18px;
+    }
+
+    .seo-block p {
+      margin: 0;
+      line-height: 1.75;
+    }
+
+    /*
+      Todos os acessórios em uma única grade
+    */
+
+    .acessorios-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .acessorios-grid .card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .acessorios-grid .thumb {
+      width: 100%;
+      height: 230px;
+      object-fit: contain;
+      display: block;
+      background: #fff;
+      box-sizing: border-box;
+    }
+
+    .acessorios-grid .item {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .acessorios-grid h3 {
+      line-height: 1.35;
+    }
+
+    .acessorios-grid .submeta {
+      margin-bottom: 12px;
+    }
+
+    .acessorios-grid .actions {
+      margin-top: auto !important;
+      padding-top: 16px;
+    }
+
+    /*
+      Tablets
+    */
+
+    @media (max-width: 950px) {
+
+      .acessorios-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+    }
+
+    /*
+      Celulares
+    */
+
+    @media (max-width: 600px) {
+
+      .acessorios-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .acessorios-grid .thumb {
+        height: 245px;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
-  <!-- Topbar -->
+
+  <!-- TOPBAR -->
   <div class="topbar">
     <div class="container">
       <div class="inner">
+
         <span>Vendas pelo WhatsApp</span>
         <span class="dot">•</span>
         <span>Somente Atacado</span>
         <span class="dot">•</span>
         <span>Envio para todo o Brasil</span>
+
       </div>
     </div>
   </div>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero">
       <div class="container">
+
         <div class="center">
-          <a href="index.html" aria-label="Voltar para a página inicial">
-            <img class="logo-hero" src="assets/dinax-logo.png" alt="Dinax">
+
+          <a
+            href="index.html"
+            aria-label="Voltar para a página inicial">
+
+            <img
+              class="logo-hero"
+              src="assets/dinax-logo.png"
+              alt="Dinax">
+
           </a>
 
-          <div class="kicker" style="margin-bottom:10px;">
+          <div
+            class="kicker"
+            style="margin-bottom:10px;">
+
             Acessórios • Somente Atacado • Envio nacional
+
           </div>
 
-          <h1>Acessórios</h1>
+          <h1>Acessórios Dinax</h1>
 
           <p class="lead maxch">
-            Acessórios que facilitam o dia a dia no trabalho e em operações: transporte, apoio e suporte.
-            Solicite catálogo e orçamento pelo WhatsApp.
+
+            Conheça os acessórios Dinax para
+            facilitar o dia a dia no trabalho,
+            em atividades profissionais e no lazer.
+
+            Nossa linha inclui carregadores de baterias,
+            acessórios para celular, tripés para
+            fotografia e vídeo e soluções de transporte.
+
+            Compre no atacado pelo WhatsApp,
+            com envio para todo o Brasil.
+
           </p>
 
-          <div class="ctas" style="margin-top:18px;">
-            <a class="btn primary"
-               href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Quero%20o%20cat%C3%A1logo%20de%20acess%C3%B3rios%20da%20Dinax%20e%20um%20or%C3%A7amento."
-               target="_blank" rel="noopener">
-              Solicitar orçamento no WhatsApp
+          <!-- BOTÕES PRINCIPAIS -->
+          <div
+            class="ctas"
+            style="margin-top:18px;">
+
+            <a
+              class="btn primary"
+              href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20acess%C3%B3rios."
+              target="_blank"
+              rel="noopener">
+
+              Comprar acessórios pelo WhatsApp
+
             </a>
-            <a class="btn" href="produtos.html">Ver todos os produtos</a>
+
+            <a
+              class="btn"
+              href="produtos.html">
+
+              Ver todos os produtos
+
+            </a>
+
           </div>
 
+          <!-- TEXTO SEO -->
           <div class="seo-block maxch">
+
             <p>
-              Nesta categoria você encontra acessórios úteis para rotinas profissionais e uso doméstico:
-              desde soluções de <em>transporte e organização</em> até itens para <em>foto e vídeo</em>.
-              Produtos robustos, fáceis de usar e ideais para quem precisa de praticidade no dia a dia.
+
+              Se você procura por
+              <em>bastão selfie Bluetooth</em>,
+              <em>tripé para celular</em>,
+              <em>carregador de baterias 18650</em>,
+              <em>tripé profissional para câmeras</em>
+              ou <em>carrinho de transporte retrátil</em>,
+              confira os produtos disponíveis
+              nesta categoria.
+
+              A Dinax oferece acessórios
+              para diferentes necessidades,
+              desde fotografia e gravações
+              até transporte e recarga
+              de baterias compatíveis.
+
             </p>
+
           </div>
+
         </div>
+
       </div>
     </section>
 
+    <!-- TODOS OS ACESSÓRIOS NA MESMA GRADE -->
     <section class="section">
       <div class="container">
-        <div class="grid">
 
-          <!-- Produto 4 -->
+        <div class="acessorios-grid">
+
+          <!-- PRODUTO 1 - NOVO: CARREGADOR DUPLO 18650 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/carrinho-transporte-compacto-retratil-75kg-1.png"
-                 alt="Carrinho para Transporte Compacto e Retrátil">
+
+            <img
+              class="thumb"
+              src="produtos/carregador-duplo-baterias-litio-18650.png"
+              alt="Carregador Duplo para Baterias de Lítio 18650"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Acessórios • Transporte • Retrátil</div>
-              <h3>Carrinho para Transporte</h3>
-              <p class="meta">Capacidade até 75kg • Compacto • Fácil de guardar e transportar</p>
-              <p class="submeta">Ideal para entregas, estoque, feiras, escritório e uso doméstico</p>
-              <div class="actions" style="margin-top:16px;">
-                <a class="btn small primary" href="produtos/carrinho-transporte-compacto-retratil-75kg.html">Ver detalhes</a>
-                <a class="btn small"
-                   href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Carrinho%20para%20Transporte%20Compacto%20e%20Retr%C3%A1til.%20Pode%20me%20enviar%20pre%C3%A7o%3F"
-                   target="_blank" rel="noopener">Orçar</a>
+
+              <div class="kicker">
+                Acessórios • Carregadores • Baterias 18650
               </div>
+
+              <h3>
+                Carregador Duplo para Baterias 18650
+              </h3>
+
+              <p class="meta">
+                2 slots • Para baterias Li-ion 18650
+                • Alimentação por tomada
+              </p>
+
+              <p class="submeta">
+                Acessório para recarga de duas
+                baterias de lítio 18650 compatíveis.
+              </p>
+
+              <div class="actions">
+
+                <a
+                  class="btn small primary"
+                  href="produtos/carregador-duplo-baterias-18650.html">
+
+                  Ver detalhes
+
+                </a>
+
+                <a
+                  class="btn small"
+                  data-produto="Carregador Duplo para Baterias 18650"
+                  href="https://wa.me/5551999862098">
+
+                  Comprar
+
+                </a>
+
+              </div>
+
             </div>
           </article>
 
-          <!-- Produto 9 -->
+          <!-- PRODUTO 2 - NOVO: BASTÃO SELFIE BM-35 -->
           <article class="card">
-            <img class="thumb"
-                 src="produtos/tripe-profissional-d-3600-1.png"
-                 alt="Tripé Profissional para Câmeras D-3600">
+
+            <img
+              class="thumb"
+              src="produtos/bastao-selfie-tripe-bluetooth-bm-35.png"
+              alt="Bastão Selfie Tripé Bluetooth BM-35"
+              loading="lazy">
+
             <div class="item center">
-              <div class="kicker">Acessórios • Fotografia • Profissional</div>
-              <h3>Tripé Profissional D-3600 (1.8m)</h3>
-              <p class="meta">Altura ajustável até 1,8m • Estrutura reforçada • Uso profissional</p>
-              <p class="submeta">Ideal para fotos, vídeos, estúdios, gravações e lives</p>
-              <div class="actions" style="margin-top:16px;">
-                <a class="btn small primary"
-                   href="produtos/tripe-profissional-d-3600.html">
-                  Ver detalhes
-                </a>
-                <a class="btn small"
-                   href="https://wa.me/5551999862098?text=Olá! Tenho interesse no Tripé Profissional D-3600. Pode me enviar preço e condições?"
-                   target="_blank" rel="noopener">
-                  Orçar
-                </a>
+
+              <div class="kicker">
+                Acessórios • Celular • Bluetooth
               </div>
+
+              <h3>
+                Bastão Selfie Tripé Bluetooth BM-35
+              </h3>
+
+              <p class="meta">
+                Controle remoto Bluetooth
+                • Tripé integrado
+                • Suporte ajustável
+              </p>
+
+              <p class="submeta">
+                Para selfies, fotos em grupo,
+                gravação de vídeos e chamadas
+                com smartphones compatíveis.
+              </p>
+
+              <div class="actions">
+
+                <a
+                  class="btn small primary"
+                  href="produtos/bastao-selfie-tripe-bluetooth-bm-35.html">
+
+                  Ver detalhes
+
+                </a>
+
+                <a
+                  class="btn small"
+                  data-produto="Bastão Selfie Tripé Bluetooth BM-35"
+                  href="https://wa.me/5551999862098">
+
+                  Comprar
+
+                </a>
+
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PRODUTO 3: CARRINHO DE TRANSPORTE -->
+          <article class="card">
+
+            <img
+              class="thumb"
+              src="produtos/carrinho-transporte-compacto-retratil-75kg-1.png"
+              alt="Carrinho para Transporte Compacto Retrátil 75kg"
+              loading="lazy">
+
+            <div class="item center">
+
+              <div class="kicker">
+                Acessórios • Transporte • Retrátil
+              </div>
+
+              <h3>
+                Carrinho para Transporte
+              </h3>
+
+              <p class="meta">
+                Capacidade até 75kg
+                • Compacto
+                • Fácil de guardar e transportar
+              </p>
+
+              <p class="submeta">
+                Ideal para entregas, estoque,
+                feiras, escritório e uso doméstico.
+              </p>
+
+              <div class="actions">
+
+                <a
+                  class="btn small primary"
+                  href="produtos/carrinho-transporte-compacto-retratil-75kg.html">
+
+                  Ver detalhes
+
+                </a>
+
+                <a
+                  class="btn small"
+                  data-produto="Carrinho para Transporte Compacto Retrátil 75kg"
+                  href="https://wa.me/5551999862098">
+
+                  Comprar
+
+                </a>
+
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PRODUTO 4: TRIPÉ PROFISSIONAL D-3600 -->
+          <article class="card">
+
+            <img
+              class="thumb"
+              src="produtos/tripe-profissional-d-3600-1.png"
+              alt="Tripé Profissional para Câmeras D-3600"
+              loading="lazy">
+
+            <div class="item center">
+
+              <div class="kicker">
+                Acessórios • Fotografia • Profissional
+              </div>
+
+              <h3>
+                Tripé Profissional D-3600 (1,8m)
+              </h3>
+
+              <p class="meta">
+                Altura ajustável até 1,8m
+                • Estrutura reforçada
+                • Uso profissional
+              </p>
+
+              <p class="submeta">
+                Ideal para fotos, vídeos,
+                estúdios, gravações e lives.
+              </p>
+
+              <div class="actions">
+
+                <a
+                  class="btn small primary"
+                  href="produtos/tripe-profissional-d-3600.html">
+
+                  Ver detalhes
+
+                </a>
+
+                <a
+                  class="btn small"
+                  data-produto="Tripé Profissional D-3600"
+                  href="https://wa.me/5551999862098">
+
+                  Comprar
+
+                </a>
+
+              </div>
+
             </div>
           </article>
 
         </div>
+
       </div>
     </section>
+
   </main>
 
-  <!-- Footer -->
+  <!-- RODAPÉ -->
   <footer>
     <div class="container">
-      <div class="center" style="opacity:.95;">
+
+      <div
+        class="center"
+        style="opacity:.95;">
+
         © 2026 Dinax · CNPJ: 18284516/0001-70
+
       </div>
+
     </div>
   </footer>
+
+  <!-- WHATSAPP FLUTUANTE -->
+  <a
+    class="whats-float"
+    href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20acess%C3%B3rios."
+    target="_blank"
+    rel="noopener"
+    aria-label="Falar com a Dinax pelo WhatsApp">
+
+    <span class="bubble" aria-hidden="true">
+
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+
+        <path
+          fill="#25D366"
+          d="M12 2a9.8 9.8 0 0 0-8.4 14.9L2 22l5.2-1.5A9.8 9.8 0 1 0 12 2z"/>
+
+        <path
+          fill="#fff"
+          d="M9.2 7.6c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .6.4.2.4.7 1.7.8 1.9.1.2.1.4l-.3.4-.3.3c-.1.1-.3.3-.1.6.2.3.7 1.2 1.5 1.9.8.7 1.5.9 1.8 1 .2.1.4 0 .5-.2l.7-.8c.2-.2.3-.2.5-.1.2.1 1.5.7 1.8.9.3.1.4.2.5.3.1.2.1.9-.3 1.5-.3.5-1.2 1-1.8 1-.6 0-1.1-.2-2.6-.8-1.5-.7-2.5-1.7-3.4-2.9-.9-1.2-1.4-3.2-1.4-3.2 0-.8.3-1.5.6-2z"/>
+
+      </svg>
+
+    </span>
+
+    <span>WhatsApp</span>
+
+  </a>
+
+  <!-- MENSAGEM INDIVIDUAL DE COMPRA -->
+  <script>
+    document.querySelectorAll('[data-produto]').forEach(function(link) {
+
+      var produto = link.getAttribute('data-produto');
+
+      var mensagem =
+        'Olá! Vim pelo site da Dinax e tenho interesse em comprar ' +
+        produto + '.';
+
+      link.href =
+        'https://wa.me/5551999862098?text=' +
+        encodeURIComponent(mensagem);
+
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+
+    });
+  </script>
+
 </body>
 </html>
