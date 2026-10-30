@@ -8,29 +8,22 @@
 
   <meta
     name="description"
-    content="Dinax: lanternas LED, baterias recarregáveis e acessórios no atacado. Produtos para camping, segurança, trabalho, lazer, ciclismo, caça e pesca. Atendimento pelo WhatsApp e envio para todo o Brasil.">
+    content="Dinax: lanternas táticas, holofotes, lanternas de cabeça, baterias recarregáveis e acessórios. Vendas no atacado pelo WhatsApp, com envio para todo o Brasil.">
 
   <meta name="robots" content="index,follow">
 
   <link rel="canonical" href="https://dinax.com.br/">
 
+  <meta property="og:title" content="Dinax | Lanternas, Baterias e Acessórios">
+  <meta
+    property="og:description"
+    content="Conheça os produtos Dinax. Lanternas, baterias e acessórios com vendas no atacado e envio para todo o Brasil.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Dinax">
-  <meta property="og:title" content="Dinax | Lanternas, Baterias e Acessórios no Atacado">
-
-  <meta
-    property="og:description"
-    content="Lanternas LED, baterias recarregáveis e acessórios para revenda. Somente atacado, com envio para todo o Brasil.">
-
   <meta property="og:url" content="https://dinax.com.br/">
 
-  <meta
-    property="og:image"
-    content="https://dinax.com.br/assets/dinax-logo.png">
-
-  <link rel="icon" href="assets/favicon-dinax.png" type="image/png">
-
+  <!-- Fonte Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -38,601 +31,864 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
     rel="stylesheet">
 
+  <!-- CSS principal -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    href="assets/favicon-dinax.png"
+    type="image/png">
+
   <style>
-    /* Complementos específicos da página inicial */
+
+    /* AJUSTES EXCLUSIVOS DA PÁGINA INICIAL */
+
+    .home-hero .lead {
+      margin-top: 10px;
+    }
 
     .home-intro {
+      padding-bottom: 0;
+    }
+
+    /*
+      CORREÇÃO DO ALINHAMENTO
+
+      Centraliza título, parágrafo e atalhos,
+      independentemente das regras gerais
+      existentes no style.css.
+    */
+
+    .home-intro .home-intro-content {
+      width: 100%;
       text-align: center;
-      max-width: 850px;
-      margin: 0 auto 34px;
     }
 
-    .home-intro h2 {
-      line-height: 1.3;
-      margin-bottom: 16px;
-    }
-
-    .home-intro p {
-      line-height: 1.8;
+    .home-intro .home-intro-content h2 {
+      text-align: center;
       margin-left: auto;
       margin-right: auto;
     }
 
-    .home-products {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-      margin-top: 28px;
+    .home-intro .home-seo-text {
+      display: block;
+      width: 100%;
+      max-width: 760px;
+      margin: 18px auto 26px;
+      text-align: center !important;
+      line-height: 1.75;
     }
 
-    .home-products .card {
+    .home-intro .home-seo-text em {
+      text-align: inherit;
+    }
+
+    .home-category-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin: 24px auto 0;
+      text-align: center;
+    }
+
+    /*
+      ESPAÇO ENTRE OS BOTÕES DE CATEGORIAS
+      E A SEÇÃO PRODUTOS EM DESTAQUE
+    */
+
+    .featured-products {
+      padding-top: 100px;
+    }
+
+    .featured-title {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .featured-title h2 {
+      margin: 0 0 12px;
+      text-align: center;
+    }
+
+    .featured-title p {
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /*
+      GRADE DOS PRODUTOS
+    */
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .featured-grid .card {
       display: flex;
       flex-direction: column;
       min-width: 0;
     }
 
-    .home-products .thumb {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .home-products .thumb img {
-      display: block;
+    .featured-grid .thumb {
       width: 100%;
-      height: 100%;
+      height: 230px;
       object-fit: contain;
+      display: block;
+      background: #fff;
+      box-sizing: border-box;
     }
 
-    .home-products .item {
+    .featured-grid .item {
       display: flex;
       flex-direction: column;
       flex: 1;
     }
 
-    .home-products .actions {
-      margin-top: auto;
-      padding-top: 18px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+    .featured-grid h3 {
+      line-height: 1.35;
     }
 
-    .home-products .actions .btn {
-      text-align: center;
+    .featured-grid .submeta {
+      margin-bottom: 12px;
     }
 
-    .home-category-links {
+    .featured-grid .actions {
+      margin-top: auto !important;
+      padding-top: 16px;
+    }
+
+    /*
+      BOTÃO VER TODOS OS PRODUTOS
+    */
+
+    .all-products-link {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 26px;
+      margin-top: 38px;
     }
 
-    .home-bottom {
-      text-align: center;
-      max-width: 850px;
-      margin: 0 auto;
+    /*
+      ESPAÇO ANTES DA SEÇÃO SOBRE
+    */
+
+    .home-about {
+      padding-top: 54px;
     }
 
-    .home-bottom p {
-      line-height: 1.8;
-    }
+    /*
+      TABLETS
+    */
 
-    @media (max-width: 900px) {
-      .home-products {
+    @media (max-width: 950px) {
+
+      .featured-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+
+      .featured-products {
+        padding-top: 78px;
+      }
+
     }
 
+    /*
+      CELULARES
+    */
+
     @media (max-width: 600px) {
-      .home-products {
+
+      .home-intro .home-intro-content h2 {
+        text-align: center;
+      }
+
+      .home-intro .home-seo-text {
+        max-width: 100%;
+        text-align: center !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .featured-grid {
         grid-template-columns: 1fr;
       }
 
-      .home-products .actions {
-        flex-direction: column;
+      .featured-products {
+        padding-top: 65px;
       }
 
-      .home-products .actions .btn {
-        width: 100%;
+      .featured-grid .thumb {
+        height: 245px;
       }
+
+      .all-products-link {
+        margin-top: 30px;
+      }
+
+      .home-about {
+        padding-top: 40px;
+      }
+
     }
+
   </style>
 </head>
 
 <body>
 
-  <!-- BARRA SUPERIOR -->
+  <!-- TOPBAR -->
   <div class="topbar">
     <div class="container">
       <div class="inner">
+
         <span>Vendas pelo WhatsApp</span>
         <span class="dot">•</span>
         <span>Somente Atacado</span>
         <span class="dot">•</span>
         <span>Envio para todo o Brasil</span>
+
       </div>
     </div>
   </div>
 
   <main>
 
-    <!-- APRESENTAÇÃO -->
-    <section class="hero">
-      <div class="container center">
+    <!-- HERO -->
+    <section class="hero home-hero">
+      <div class="container">
+        <div class="hero-grid">
 
-        <a href="index.html" aria-label="Página inicial da Dinax">
-          <img
-            class="logo-hero"
-            src="assets/dinax-logo.png"
-            alt="Dinax">
-        </a>
+          <div class="center">
 
-        <h1>
-          Lanternas, Baterias e Acessórios no Atacado
-        </h1>
+            <img
+              class="logo-hero"
+              src="assets/dinax-logo.png"
+              alt="Dinax">
 
-        <p class="lead">
-          Produtos para revenda, com atendimento pelo WhatsApp
-          e envio para todo o Brasil.
-        </p>
+            <h1>
+              Lanternas, baterias recarregáveis
+              e acessórios de alta performance
+            </h1>
 
-        <div class="ctas">
-          <a class="btn primary" href="produtos.html">
-            Ver todos os produtos
-          </a>
+            <p class="lead maxch">
+              A Dinax atua há mais de uma década
+              no mercado brasileiro com foco
+              em qualidade e atendimento direto.
 
-          <a
-            class="btn"
-            href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20gostaria%20de%20conhecer%20os%20produtos%20para%20compra%20no%20atacado."
-            target="_blank"
-            rel="noopener noreferrer">
-            Falar pelo WhatsApp
-          </a>
+              Baseada no Rio Grande do Sul,
+              somos especialistas em lanternas,
+              baterias e acessórios, com atendimento
+              comercial pelo WhatsApp.
+            </p>
+
+            <div class="ctas" style="margin-top:22px;">
+
+              <a
+                class="btn primary"
+                href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20produtos."
+                target="_blank"
+                rel="noopener">
+
+                Comprar agora pelo WhatsApp
+
+              </a>
+
+            </div>
+
+          </div>
+
         </div>
+      </div>
+    </section>
 
-        <div class="home-category-links">
-          <a class="btn" href="lanternas.html">Lanternas</a>
-          <a class="btn" href="baterias.html">Baterias</a>
-          <a class="btn" href="acessorios.html">Acessórios</a>
+    <!-- INTRODUÇÃO E CATEGORIAS -->
+    <section class="section home-intro">
+      <div class="container">
+
+        <!-- BLOCO CENTRALIZADO -->
+        <div class="home-intro-content center">
+
+          <h2>
+            Produtos para camping, segurança,
+            trabalho, lazer, ciclismo, caça e pesca
+          </h2>
+
+          <p class="home-seo-text">
+
+            Se você chegou aqui pelo Google
+            pesquisando por
+            <em>lanterna tática</em>,
+            <em>lanterna holofote recarregável</em>,
+            <em>lanterna de cabeça</em>,
+            <em>iluminação LED</em>,
+            <em>baterias recarregáveis</em>
+            ou <em>acessórios para celular</em>,
+            você está no lugar certo.
+
+            Nossa linha atende desde uso doméstico
+            e emergências até aplicações profissionais.
+
+          </p>
+
+          <!-- BOTÕES DE NAVEGAÇÃO -->
+          <div
+            class="pills home-category-links"
+            aria-label="Categorias de produtos">
+
+            <a
+              class="pillbtn"
+              href="lanternas.html">
+              Lanternas
+            </a>
+
+            <a
+              class="pillbtn"
+              href="baterias.html">
+              Baterias recarregáveis
+            </a>
+
+            <a
+              class="pillbtn"
+              href="acessorios.html">
+              Acessórios
+            </a>
+
+            <a
+              class="pillbtn"
+              href="produtos.html">
+              Todos os produtos
+            </a>
+
+          </div>
+
         </div>
 
       </div>
     </section>
 
-    <!-- TEXTO INTRODUTÓRIO CENTRALIZADO -->
-    <section class="section">
+    <!-- PRODUTOS EM DESTAQUE -->
+    <section class="section featured-products">
       <div class="container">
 
-        <div class="home-intro">
-          <h2>
-            Produtos para camping, segurança, trabalho,
-            lazer, ciclismo, caça e pesca
-          </h2>
+        <div class="featured-title">
+
+          <h2>Produtos em destaque</h2>
 
           <p>
-            A Dinax oferece uma seleção de lanternas,
-            baterias recarregáveis e acessórios para
-            diferentes necessidades. Trabalhamos com
-            vendas no atacado, atendimento comercial
-            pelo WhatsApp e envio para todo o Brasil.
+            Conheça alguns dos produtos disponíveis
+            no catálogo da Dinax.
           </p>
+
         </div>
 
-        <!-- PRODUTOS EM DESTAQUE -->
-        <h2 class="center">Produtos em destaque</h2>
+        <div class="featured-grid">
 
-        <div class="home-products">
-
-          <!-- 1. LANTERNA D-816 -->
+          <!-- PRODUTO 1: D-816 -->
           <article class="card">
-            <a
+
+            <img
               class="thumb"
-              href="produtos/lanterna-de-cabeca-led-d-816.html"
-              aria-label="Ver Lanterna de Cabeça LED D-816">
+              src="produtos/lanterna-de-cabeca-led-d-816-sensor-movimento.png"
+              alt="Lanterna de Cabeça LED D-816"
+              loading="lazy">
 
-              <img
-                src="produtos/lanterna-de-cabeca-led-d-816-sensor-movimento.png"
-                alt="Lanterna de Cabeça LED Recarregável D-816"
-                loading="lazy">
-            </a>
+            <div class="item center">
 
-            <div class="item">
-              <div class="kicker">Lanternas</div>
+              <div class="kicker">
+                Lanternas de Cabeça • Recarregável
+              </div>
 
-              <h3>Lanterna de Cabeça LED D-816</h3>
+              <h3>
+                Lanterna de Cabeça LED D-816
+              </h3>
 
               <p class="meta">
-                Recarregável, com sensor de movimento,
-                zoom e inclinação ajustável.
+                Sensor de movimento • Zoom ajustável
+                • Recarregável
+              </p>
+
+              <p class="submeta">
+                Para camping, pesca, trilhas
+                e manutenção com as mãos livres.
               </p>
 
               <div class="actions">
+
                 <a
-                  class="btn"
+                  class="btn small primary"
                   href="produtos/lanterna-de-cabeca-led-d-816.html">
                   Ver detalhes
                 </a>
 
                 <a
-                  class="btn primary"
-                  href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20Lanterna%20de%20Cabe%C3%A7a%20LED%20D-816."
-                  target="_blank"
-                  rel="noopener noreferrer">
+                  class="btn small"
+                  data-produto="Lanterna de Cabeça LED D-816"
+                  href="https://wa.me/5551999862098">
                   Comprar
                 </a>
+
               </div>
+
             </div>
           </article>
 
-          <!-- 2. CARREGADOR DUPLO 18650 -->
+          <!-- PRODUTO 2: CARREGADOR DUPLO 18650 -->
           <article class="card">
-            <a
+
+            <img
               class="thumb"
-              href="produtos/carregador-duplo-baterias-18650.html"
-              aria-label="Ver Carregador Duplo de Baterias 18650">
+              src="produtos/carregador-duplo-baterias-litio-18650.png"
+              alt="Carregador Duplo para Baterias de Lítio 18650"
+              loading="lazy">
 
-              <img
-                src="produtos/carregador-duplo-baterias-litio-18650.png"
-                alt="Carregador Duplo de Baterias de Lítio 18650"
-                loading="lazy">
-            </a>
+            <div class="item center">
 
-            <div class="item">
-              <div class="kicker">Acessórios</div>
+              <div class="kicker">
+                Carregadores • Baterias 18650
+              </div>
 
-              <h3>Carregador Duplo de Baterias 18650</h3>
+              <h3>
+                Carregador Duplo para Baterias 18650
+              </h3>
 
               <p class="meta">
-                Carregador com dois compartimentos
-                para baterias de lítio 18650.
+                2 slots • Para baterias Li-ion 18650
+                • Alimentação por tomada
+              </p>
+
+              <p class="submeta">
+                Acessório para recarga de baterias
+                de equipamentos compatíveis.
               </p>
 
               <div class="actions">
+
                 <a
-                  class="btn"
+                  class="btn small primary"
                   href="produtos/carregador-duplo-baterias-18650.html">
                   Ver detalhes
                 </a>
 
                 <a
-                  class="btn primary"
-                  href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20Carregador%20Duplo%20de%20Baterias%2018650."
-                  target="_blank"
-                  rel="noopener noreferrer">
+                  class="btn small"
+                  data-produto="Carregador Duplo para Baterias 18650"
+                  href="https://wa.me/5551999862098">
                   Comprar
                 </a>
+
               </div>
+
             </div>
           </article>
 
-          <!-- 3. LANTERNA D-807 -->
+          <!-- PRODUTO 3: D-807 -->
           <article class="card">
-            <a
+
+            <img
               class="thumb"
-              href="produtos/lanterna-de-cabeca-led-d-807.html"
-              aria-label="Ver Lanterna de Cabeça LED D-807">
+              src="produtos/lanterna-de-cabeca-led-recarregavel-d-807.png"
+              alt="Lanterna de Cabeça LED D-807"
+              loading="lazy">
 
-              <img
-                src="produtos/lanterna-de-cabeca-led-recarregavel-d-807.png"
-                alt="Lanterna de Cabeça LED Recarregável D-807"
-                loading="lazy">
-            </a>
+            <div class="item center">
 
-            <div class="item">
-              <div class="kicker">Lanternas</div>
+              <div class="kicker">
+                Lanternas de Cabeça • Recarregável
+              </div>
 
-              <h3>Lanterna de Cabeça LED D-807</h3>
+              <h3>
+                Lanterna de Cabeça LED D-807
+              </h3>
 
               <p class="meta">
-                LED T6, três modos de iluminação,
-                zoom ajustável e recarga.
+                Zoom ajustável • Recarregável
+                • Iluminação LED
+              </p>
+
+              <p class="submeta">
+                Para pesca, camping,
+                trilhas e manutenção.
               </p>
 
               <div class="actions">
+
                 <a
-                  class="btn"
+                  class="btn small primary"
                   href="produtos/lanterna-de-cabeca-led-d-807.html">
                   Ver detalhes
                 </a>
 
                 <a
-                  class="btn primary"
-                  href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20Lanterna%20de%20Cabe%C3%A7a%20LED%20D-807."
-                  target="_blank"
-                  rel="noopener noreferrer">
+                  class="btn small"
+                  data-produto="Lanterna de Cabeça LED D-807"
+                  href="https://wa.me/5551999862098">
                   Comprar
                 </a>
+
               </div>
+
             </div>
           </article>
 
-          <!-- 4. HOLOFOTE 7045B -->
+          <!-- PRODUTO 4: HOLOFOTE 7045B -->
           <article class="card">
-            <a
+
+            <img
               class="thumb"
-              href="produtos/lanterna-holofote-super-led-7045b.html"
-              aria-label="Ver Lanterna Holofote Super LED 7045B">
+              src="produtos/lanterna-holofote-super-led.png"
+              alt="Lanterna Holofote Super LED 7045b"
+              loading="lazy">
 
-              <img
-                src="produtos/lanterna-holofote-super-led.png"
-                alt="Lanterna Holofote Super LED 7045B"
-                loading="lazy">
-            </a>
+            <div class="item center">
 
-            <div class="item">
-              <div class="kicker">Lanternas</div>
+              <div class="kicker">
+                Lanternas Holofote • Recarregável
+              </div>
 
-              <h3>Lanterna Holofote Super LED 7045B</h3>
+              <h3>
+                Lanterna Holofote Super LED 7045b
+              </h3>
 
               <p class="meta">
-                Holofote portátil com iluminação Super LED.
+                240 lumens • Bivolt
+                • 2 modos de iluminação
+                • Alça para transporte
+              </p>
+
+              <p class="submeta">
+                Ideal para segurança, camping,
+                trabalho e emergências.
               </p>
 
               <div class="actions">
+
                 <a
-                  class="btn"
+                  class="btn small primary"
                   href="produtos/lanterna-holofote-super-led-7045b.html">
                   Ver detalhes
                 </a>
 
                 <a
-                  class="btn primary"
-                  href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20Lanterna%20Holofote%20Super%20LED%207045B."
-                  target="_blank"
-                  rel="noopener noreferrer">
+                  class="btn small"
+                  data-produto="Lanterna Holofote Super LED 7045b"
+                  href="https://wa.me/5551999862098">
                   Comprar
                 </a>
+
               </div>
+
             </div>
           </article>
 
-          <!-- 5. LANTERNA X-900 -->
+          <!-- PRODUTO 5: X-900 -->
           <article class="card">
-            <a
+
+            <img
               class="thumb"
-              href="produtos/lanterna-tatica-x900.html"
-              aria-label="Ver Lanterna Tática X-900">
+              src="produtos/lanterna-tatica-x900-1.png"
+              alt="Lanterna Tática X-900"
+              loading="lazy">
 
-              <img
-                src="produtos/lanterna-tatica-x900-1.png"
-                alt="Lanterna Tática X-900"
-                loading="lazy">
-            </a>
+            <div class="item center">
 
-            <div class="item">
-              <div class="kicker">Lanternas</div>
+              <div class="kicker">
+                Lanternas Táticas • Recarregável
+              </div>
 
-              <h3>Lanterna Tática X-900</h3>
+              <h3>
+                Lanterna Tática X-900
+              </h3>
 
               <p class="meta">
-                Lanterna tática portátil para iluminação auxiliar.
+                5 modos de luz • Bateria recarregável 3,7V
+                • Carregamento USB
+              </p>
+
+              <p class="submeta">
+                Para pesca, trilhas, camping,
+                sítio e segurança.
               </p>
 
               <div class="actions">
+
                 <a
-                  class="btn"
+                  class="btn small primary"
                   href="produtos/lanterna-tatica-x900.html">
                   Ver detalhes
                 </a>
 
                 <a
-                  class="btn primary"
-                  href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20Lanterna%20T%C3%A1tica%20X-900."
-                  target="_blank"
-                  rel="noopener noreferrer">
+                  class="btn small"
+                  data-produto="Lanterna Tática X-900"
+                  href="https://wa.me/5551999862098">
                   Comprar
                 </a>
+
               </div>
+
             </div>
           </article>
 
-          <!-- 6. LANTERNA DE CABEÇA P50 -->
+          <!-- PRODUTO 6: P50 -->
           <article class="card">
-            <a
+
+            <img
               class="thumb"
-              href="produtos/lanterna-de-cabeca-led-p50.html"
-              aria-label="Ver Lanterna de Cabeça LED P50">
+              src="produtos/lanterna-de-cabeca-led-p50.png"
+              alt="Lanterna de Cabeça LED P50"
+              loading="lazy">
 
-              <img
-                src="produtos/lanterna-de-cabeca-led-p50.png"
-                alt="Lanterna de Cabeça LED P50"
-                loading="lazy">
-            </a>
+            <div class="item center">
 
-            <div class="item">
-              <div class="kicker">Lanternas</div>
+              <div class="kicker">
+                Lanternas de Cabeça • Recarregável
+              </div>
 
-              <h3>Lanterna de Cabeça LED P50</h3>
+              <h3>
+                Lanterna de Cabeça LED P50
+              </h3>
 
               <p class="meta">
-                Iluminação LED para atividades com as mãos livres.
+                4 modos de luz • Zoom ajustável
+                • Acompanha 2 baterias recarregáveis
+              </p>
+
+              <p class="submeta">
+                Para trilhas, pesca,
+                ciclismo e manutenção.
               </p>
 
               <div class="actions">
+
                 <a
-                  class="btn"
+                  class="btn small primary"
                   href="produtos/lanterna-de-cabeca-led-p50.html">
                   Ver detalhes
                 </a>
 
                 <a
-                  class="btn primary"
-                  href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20Lanterna%20de%20Cabe%C3%A7a%20LED%20P50."
-                  target="_blank"
-                  rel="noopener noreferrer">
+                  class="btn small"
+                  data-produto="Lanterna de Cabeça LED P50"
+                  href="https://wa.me/5551999862098">
                   Comprar
                 </a>
+
               </div>
+
             </div>
           </article>
 
-          <!-- 7. CARRINHO RETRÁTIL -->
+          <!-- PRODUTO 7: CARRINHO -->
           <article class="card">
-            <a
+
+            <img
               class="thumb"
-              href="produtos/carrinho-transporte-compacto-retratil-75kg.html"
-              aria-label="Ver Carrinho Transporte Compacto Retrátil 75kg">
+              src="produtos/carrinho-transporte-compacto-retratil-75kg-1.png"
+              alt="Carrinho para Transporte Compacto e Retrátil"
+              loading="lazy">
 
-              <img
-                src="produtos/carrinho-transporte-compacto-retratil-75kg-1.png"
-                alt="Carrinho Transporte Compacto Retrátil 75kg"
-                loading="lazy">
-            </a>
+            <div class="item center">
 
-            <div class="item">
-              <div class="kicker">Acessórios</div>
+              <div class="kicker">
+                Acessórios • Transporte • Retrátil
+              </div>
 
-              <h3>Carrinho Transporte Compacto Retrátil 75kg</h3>
+              <h3>
+                Carrinho para Transporte
+              </h3>
 
               <p class="meta">
-                Carrinho compacto e retrátil
-                para transporte de cargas.
+                Capacidade até 75kg
+                • Compacto
+                • Fácil de guardar e transportar
+              </p>
+
+              <p class="submeta">
+                Para entregas, estoque,
+                feiras, escritório e uso doméstico.
               </p>
 
               <div class="actions">
+
                 <a
-                  class="btn"
+                  class="btn small primary"
                   href="produtos/carrinho-transporte-compacto-retratil-75kg.html">
                   Ver detalhes
                 </a>
 
                 <a
-                  class="btn primary"
-                  href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20Carrinho%20Transporte%20Compacto%20Retr%C3%A1til%2075kg."
-                  target="_blank"
-                  rel="noopener noreferrer">
+                  class="btn small"
+                  data-produto="Carrinho para Transporte Compacto Retrátil"
+                  href="https://wa.me/5551999862098">
                   Comprar
                 </a>
+
               </div>
+
             </div>
           </article>
 
-          <!-- 8. LANTERNA MINI D-8400 -->
+          <!-- PRODUTO 8: MINI D-8400 -->
           <article class="card">
-            <a
+
+            <img
               class="thumb"
-              href="produtos/lanterna-tatica-mini-d-8400.html"
-              aria-label="Ver Lanterna Tática Mini D-8400">
+              src="produtos/lanterna-tatica-mini-d-8400-1.png"
+              alt="Lanterna Tática Mini D-8400"
+              loading="lazy">
 
-              <img
-                src="produtos/lanterna-tatica-mini-d-8400-1.png"
-                alt="Lanterna Tática Mini D-8400"
-                loading="lazy">
-            </a>
+            <div class="item center">
 
-            <div class="item">
-              <div class="kicker">Lanternas</div>
+              <div class="kicker">
+                Lanternas Táticas • Recarregável
+              </div>
 
-              <h3>Lanterna Tática Mini D-8400</h3>
+              <h3>
+                Lanterna Tática Mini D-8400
+              </h3>
 
               <p class="meta">
-                Lanterna tática compacta e portátil.
+                Recarregável via USB
+                • 3 funções de iluminação
+              </p>
+
+              <p class="submeta">
+                Compacta para emergências,
+                carro, camping e manutenção.
               </p>
 
               <div class="actions">
+
                 <a
-                  class="btn"
+                  class="btn small primary"
                   href="produtos/lanterna-tatica-mini-d-8400.html">
                   Ver detalhes
                 </a>
 
                 <a
-                  class="btn primary"
-                  href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20Lanterna%20T%C3%A1tica%20Mini%20D-8400."
-                  target="_blank"
-                  rel="noopener noreferrer">
+                  class="btn small"
+                  data-produto="Lanterna Tática Mini D-8400"
+                  href="https://wa.me/5551999862098">
                   Comprar
                 </a>
+
               </div>
+
             </div>
           </article>
 
-          <!-- 9. LANTERNA DE CABEÇA 722B -->
+          <!-- PRODUTO 9: 722B -->
           <article class="card">
-            <a
+
+            <img
               class="thumb"
-              href="produtos/lanterna-cabeca-12-leds-722b.html"
-              aria-label="Ver Lanterna de Cabeça 12 LEDs 722B">
+              src="produtos/lanterna-cabeca-12-leds-722b.png"
+              alt="Lanterna de Cabeça 12 LEDs 722b"
+              loading="lazy">
 
-              <img
-                src="produtos/lanterna-cabeca-12-leds-722b.png"
-                alt="Lanterna de Cabeça 12 LEDs 722B"
-                loading="lazy">
-            </a>
+            <div class="item center">
 
-            <div class="item">
-              <div class="kicker">Lanternas</div>
+              <div class="kicker">
+                Lanternas de Cabeça • Recarregável
+              </div>
 
-              <h3>Lanterna de Cabeça 12 LEDs 722B</h3>
+              <h3>
+                Lanterna de Cabeça 12 LEDs 722b
+              </h3>
 
               <p class="meta">
-                Lanterna de cabeça com 12 LEDs
-                para iluminação auxiliar.
+                12 LEDs • 60 lumens
+                • Bateria 800mAh • Bivolt
+              </p>
+
+              <p class="submeta">
+                Para manutenção, oficinas
+                e trabalhos contínuos.
               </p>
 
               <div class="actions">
+
                 <a
-                  class="btn"
+                  class="btn small primary"
                   href="produtos/lanterna-cabeca-12-leds-722b.html">
                   Ver detalhes
                 </a>
 
                 <a
-                  class="btn primary"
-                  href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20Lanterna%20de%20Cabe%C3%A7a%2012%20LEDs%20722B."
-                  target="_blank"
-                  rel="noopener noreferrer">
+                  class="btn small"
+                  data-produto="Lanterna de Cabeça 12 LEDs 722b"
+                  href="https://wa.me/5551999862098">
                   Comprar
                 </a>
+
               </div>
+
             </div>
           </article>
 
         </div>
 
-        <!-- ACESSO AO CATÁLOGO -->
-        <div class="center" style="margin-top:34px;">
-          <a class="btn primary" href="produtos.html">
-            Ver catálogo completo
+        <!-- VER TODOS OS PRODUTOS -->
+        <div class="all-products-link">
+
+          <a
+            class="pillbtn"
+            href="produtos.html">
+
+            Ver todos os produtos
+
           </a>
+
         </div>
 
       </div>
     </section>
 
-    <!-- INFORMAÇÕES COMERCIAIS -->
-    <section class="section">
+    <!-- SOBRE A DINAX -->
+    <section class="section home-about">
       <div class="container">
 
-        <div class="home-bottom">
-          <h2>Compre no atacado com a Dinax</h2>
+        <div class="band center">
 
-          <p>
-            Entre em contato pelo WhatsApp para consultar
-            disponibilidade, condições comerciais e informações
-            sobre os produtos. Trabalhamos com vendas no atacado
-            e envio para todo o Brasil.
+          <h2 style="margin:0 0 14px;">
+            Sobre a Dinax
+          </h2>
+
+          <p
+            class="maxch about-text"
+            style="margin-top:10px;line-height:1.75;">
+
+            A Dinax é uma empresa com mais de
+            uma década de experiência no mercado,
+            especialista em lanternas, holofotes,
+            baterias e acessórios.
+
+            Nosso objetivo é facilitar a compra
+            com atendimento direto e orientação
+            na escolha do produto adequado.
+
           </p>
 
-          <div class="ctas">
+          <div class="ctas" style="margin-top:18px;">
+
             <a
               class="btn primary"
-              href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20gostaria%20de%20comprar%20produtos%20no%20atacado."
+              href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20produtos%20do%20cat%C3%A1logo."
               target="_blank"
-              rel="noopener noreferrer">
-              Comprar pelo WhatsApp
+              rel="noopener">
+
+              Falar no WhatsApp
+
             </a>
 
-            <a class="btn" href="produtos.html">
-              Conhecer todos os produtos
-            </a>
           </div>
+
         </div>
 
       </div>
@@ -643,52 +899,64 @@
   <!-- RODAPÉ -->
   <footer>
     <div class="container">
-      <div class="center" style="opacity:.95;">
+
+      <div
+        class="center"
+        style="opacity:.95;">
+
         © 2026 Dinax · CNPJ: 18284516/0001-70
+
       </div>
+
     </div>
   </footer>
 
   <!-- WHATSAPP FLUTUANTE -->
   <a
     class="whats-float"
-    id="whatsapp-flutuante"
-    href="https://wa.me/5551999862098"
+    href="https://wa.me/5551999862098?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Dinax%20e%20tenho%20interesse%20em%20comprar%20um%20produto."
     target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Falar com a Dinax pelo WhatsApp">
+    rel="noopener"
+    aria-label="Falar no WhatsApp">
 
     <span class="bubble" aria-hidden="true">
+
       <svg viewBox="0 0 24 24" aria-hidden="true">
+
         <path
           fill="#25D366"
           d="M12 2a9.8 9.8 0 0 0-8.4 14.9L2 22l5.2-1.5A9.8 9.8 0 1 0 12 2z"/>
 
         <path
           fill="#fff"
-          d="M9.2 7.6c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .6.4.2.4.7 1.7.8 1.9.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4-.1.6.2.3.7 1.2 1.5 1.9.8.7 1.5.9 1.8 1 .2.1.4 0 .5-.2l.7-.8c.2-.2.3-.2.5-.1.2.1 1.5.7 1.8.9.3.1.4.2.5.3.1.2.1.9-.3 1.5-.3.5-1.2 1-1.8 1-.6 0-1.1-.2-2.6-.8-1.5-.7-2.5-1.7-3.4-2.9-.9-1.2-1.4-3.2-1.4-3.2 0-.8.3-1.5.6-2z"/>
+          d="M9.2 7.6c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .6.4.2.4.7 1.7.8 1.9.1.2.1.4l-.3.4-.3.3c-.1.1-.3.3-.1.6.2.3.7 1.2 1.5 1.9.8.7 1.5.9 1.8 1 .2.1.4 0 .5-.2l.7-.8c.2-.2.3-.2.5-.1.2.1 1.5.7 1.8.9.3.1.4.2.5.3.1.2.1.9-.3 1.5-.3.5-1.2 1-1.8 1-.6 0-1.1-.2-2.6-.8-1.5-.7-2.5-1.7-3.4-2.9-.9-1.2-1.4-2.4-1.4-3.2 0-.8.3-1.5.6-2z"/>
+
       </svg>
+
     </span>
 
     <span>WhatsApp</span>
+
   </a>
 
+  <!-- MENSAGEM INDIVIDUAL DE COMPRA -->
   <script>
-    (function () {
-      var mensagem =
-        "Olá! Vim pelo site da Dinax e gostaria de conhecer os produtos para compra no atacado.";
+    document.querySelectorAll('[data-produto]').forEach(function(link) {
 
-      var link =
-        "https://wa.me/5551999862098?text=" +
+      var produto = link.getAttribute('data-produto');
+
+      var mensagem =
+        'Olá! Vim pelo site da Dinax e tenho interesse em comprar ' +
+        produto + '.';
+
+      link.href =
+        'https://wa.me/5551999862098?text=' +
         encodeURIComponent(mensagem);
 
-      var whatsappFlutuante =
-        document.getElementById("whatsapp-flutuante");
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
 
-      if (whatsappFlutuante) {
-        whatsappFlutuante.href = link;
-      }
-    })();
+    });
   </script>
 
 </body>
